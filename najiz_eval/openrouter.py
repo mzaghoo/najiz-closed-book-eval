@@ -46,6 +46,22 @@ ANSWER_SYSTEM = (
     "citations. If you cannot confidently recall the answer, say «لا أعرف». "
     "Answer concisely in Arabic, at most 150 words.")
 
+# Variant "saudi": the same instructions plus one line stating the jurisdiction.
+SAUDI_LINE = "أجب وفق الأنظمة المعمول بها في المملكة العربية السعودية."
+VARIANTS = {"base": ("four-model", ANSWER_SYSTEM),
+            "saudi": ("four-model-saudi", ANSWER_SYSTEM + " " + SAUDI_LINE)}
+
+
+def use_variant(name):
+    """Point outputs and the answer instructions at a variant (base or saudi)."""
+    global RUN, ANSWER_SYSTEM_ACTIVE
+    folder, system = VARIANTS[name]
+    RUN = ROOT / "runs" / folder
+    ANSWER_SYSTEM_ACTIVE = system
+
+
+ANSWER_SYSTEM_ACTIVE = ANSWER_SYSTEM
+
 
 # ---------------------------------------------------------------- utilities
 def _key():
@@ -126,7 +142,7 @@ def answer(model, dry_run=False, max_tokens=4000):
             if str(q) in done:
                 continue
             payload = {"model": model, "max_tokens": max_tokens,
-                       "messages": [{"role": "system", "content": ANSWER_SYSTEM},
+                       "messages": [{"role": "system", "content": ANSWER_SYSTEM_ACTIVE},
                                     {"role": "user", "content": r["questions"][str(q)]["question"]}]}
             resp = _call(payload, dry)
             if dry_run:
@@ -293,11 +309,14 @@ def report():
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--variant", choices=list(VARIANTS), default="base",
+                    help="base: instructions as Astra received them; saudi: plus one line naming Saudi law")
     sub = ap.add_subparsers(dest="cmd", required=True)
     a = sub.add_parser("answer"); a.add_argument("model"); a.add_argument("--dry-run", action="store_true")
     g = sub.add_parser("grade"); g.add_argument("--dry-run", action="store_true")
     sub.add_parser("report")
     x = ap.parse_args()
+    use_variant(x.variant)
     if x.cmd == "answer":
         answer(x.model, x.dry_run)
     elif x.cmd == "grade":
