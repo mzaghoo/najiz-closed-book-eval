@@ -77,7 +77,7 @@ def _call(payload, dry_log=None, retries=4):
             if e.code in (429, 500, 502, 503, 504) and attempt < retries - 1:
                 time.sleep(5 * 2 ** attempt); continue
             raise SystemExit(f"OpenRouter error {e.code}: {msg}")
-        except urllib.error.URLError as e:
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
             if attempt < retries - 1:
                 time.sleep(5 * 2 ** attempt); continue
             raise SystemExit(f"Network error: {e}")
