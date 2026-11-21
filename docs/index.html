@@ -13,7 +13,7 @@
 /* Layout: a single reading column of research-note prose, with full-width exhibits (charts, examples) that break slightly wider. */
 :root{
   --bg:#F7F8F6; --surface:#FFFFFF; --ink:#14201C; --muted:#56635E; --rule:#DCE1DD; --soft:#EEF1EE;
-  --astra:#0F6FA8; --opus:#C2692A;
+  --gemini:#009E73; --astra:#0072B2; --opus:#D55E00; --muse:#CC79A7;
   --g-correct:#14201C; --g-partial:#8C9893; --g-wrong:#FFFFFF; --g-wrong-edge:#B9C2BD;
   --accent:#0E6B53;
   --sans:"IBM Plex Sans","IBM Plex Sans Arabic",system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -22,19 +22,21 @@
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#121816; --surface:#19211E; --ink:#E6ECE9; --muted:#9AA8A2; --rule:#2B3531; --soft:#1F2925;
-  --astra:#3A9BD9; --opus:#CC7C38; --g-correct:#E6ECE9; --g-partial:#6F7C77; --g-wrong:#19211E; --g-wrong-edge:#45514C; --accent:#5CC4A2; color-scheme:dark}}
+  --gemini:#2FC193; --astra:#56A8E0; --opus:#E8813A; --muse:#DB94BC;
+  --g-correct:#E6ECE9; --g-partial:#6F7C77; --g-wrong:#19211E; --g-wrong-edge:#45514C; --accent:#5CC4A2; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#121816; --surface:#19211E; --ink:#E6ECE9; --muted:#9AA8A2; --rule:#2B3531; --soft:#1F2925;
-  --astra:#3A9BD9; --opus:#CC7C38; --g-correct:#E6ECE9; --g-partial:#6F7C77; --g-wrong:#19211E; --g-wrong-edge:#45514C; --accent:#5CC4A2; color-scheme:dark}
+  --gemini:#2FC193; --astra:#56A8E0; --opus:#E8813A; --muse:#DB94BC;
+  --g-correct:#E6ECE9; --g-partial:#6F7C77; --g-wrong:#19211E; --g-wrong-edge:#45514C; --accent:#5CC4A2; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
-.wrap{max-width:760px;margin:0 auto}
-.wide{max-width:960px;margin:0 auto}
+.wrap{max-width:780px;margin:0 auto}
+.wide{max-width:980px;margin:0 auto}
 header.top{padding-block:56px 32px;border-bottom:1px solid var(--rule)}
 .eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap}
-h1{font-size:clamp(30px,5vw,46px);line-height:1.12;font-weight:600;letter-spacing:-.015em;margin:18px 0 18px;text-wrap:balance}
-.dek{font-size:19.5px;color:var(--muted);margin:0;max-width:64ch}
+h1{font-size:clamp(30px,5vw,44px);line-height:1.12;font-weight:600;letter-spacing:-.015em;margin:18px 0 18px;text-wrap:balance}
+.dek{font-size:19px;color:var(--muted);margin:0;max-width:66ch}
 .byline{margin-top:22px;font-size:14px;color:var(--muted)}
 h2{font-size:24px;line-height:1.25;font-weight:600;margin:56px 0 12px;letter-spacing:-.01em;text-wrap:balance}
 h3{font-size:17px;font-weight:600;margin:28px 0 6px}
@@ -42,26 +44,28 @@ p{margin:0 0 16px;max-width:68ch}
 a{color:var(--accent);text-underline-offset:3px}
 a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .num{font-variant-numeric:tabular-nums}
-.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:36px 0 8px}
-.stat{background:var(--surface);padding:18px 18px 16px;min-width:0}
-.stat .v{font-family:var(--mono);font-size:30px;font-weight:500;line-height:1.1;font-variant-numeric:tabular-nums}
-.stat .v small{font-size:15px;color:var(--muted);font-weight:400}
-.stat .l{font-size:13.5px;color:var(--muted);margin-top:6px;line-height:1.4}
-.who{display:inline-flex;align-items:center;gap:7px;font-weight:600}
 .dot{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none}
-.dot.a{background:var(--astra)} .dot.o{background:var(--opus)}
+.d-gemini{background:var(--gemini)} .d-astra{background:var(--astra)} .d-opus{background:var(--opus)} .d-muse{background:var(--muse)}
+.who{display:inline-flex;align-items:center;gap:7px;font-weight:600;white-space:nowrap}
+.tablebox{overflow-x:auto;margin:22px 0}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:12.5px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:500}
+td.r,th.r{text-align:right;font-variant-numeric:tabular-nums}
+table.lead td.r{font-family:var(--mono);font-size:15.5px}
+table.lead tr.best td{font-weight:600}
 figure{margin:28px 0 8px;background:var(--surface);border:1px solid var(--rule);padding:22px 22px 16px}
 figcaption{font-size:13.5px;color:var(--muted);margin-top:12px;line-height:1.5}
 .fig-title{font-weight:600;font-size:15.5px;margin:0 0 14px}
 .legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13.5px;color:var(--muted);margin-bottom:12px}
 .legend span{display:inline-flex;align-items:center;gap:6px}
 .sw{width:12px;height:12px;display:inline-block;border-radius:2px}
-.grid-row{display:grid;grid-template-columns:150px minmax(0,1fr) 190px;gap:14px;align-items:center;margin:10px 0}
+.grid-row{display:grid;grid-template-columns:160px minmax(0,1fr) 190px;gap:14px;align-items:center;margin:10px 0}
 .grid-row .name{font-size:14.5px}
 .cells{display:grid;grid-template-columns:repeat(40,minmax(0,1fr));gap:2px}
-.cell{aspect-ratio:1;border-radius:2px;border:1px solid transparent;position:relative}
+.cell{aspect-ratio:1;border-radius:2px;border:1px solid transparent}
 .cell.correct{background:var(--g-correct)} .cell.partial{background:var(--g-partial)} .cell.wrong{background:var(--g-wrong);border-color:var(--g-wrong-edge)}
-.cell:hover,.cell:focus-visible{outline:2px solid var(--accent);outline-offset:1px;z-index:2}
+.cell:hover,.cell:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
 .grid-row .sum{font-family:var(--mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
 .tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);font-size:12.5px;padding:6px 9px;border-radius:4px;max-width:260px;line-height:1.4;z-index:20}
 .svgbox{overflow-x:auto}
@@ -72,17 +76,13 @@ svg .gridl{stroke:var(--rule)}
 .ex{background:var(--surface);border:1px solid var(--rule);padding:20px 22px}
 .ex .q{font-family:var(--arabic);direction:rtl;text-align:right;font-size:18px;font-weight:600;line-height:1.7;margin-bottom:4px}
 .ex .qen{font-size:14px;color:var(--muted);margin-bottom:14px}
-.ans{display:grid;grid-template-columns:120px minmax(0,1fr) 78px;gap:12px;align-items:baseline;padding:10px 0;border-top:1px solid var(--rule)}
+.ans{display:grid;grid-template-columns:150px minmax(0,1fr) 78px;gap:12px;align-items:baseline;padding:10px 0;border-top:1px solid var(--rule)}
 .ans .src{font-size:13.5px;font-weight:600}
 .ans .t{font-family:var(--arabic);direction:rtl;text-align:right;font-size:15.5px;line-height:1.75;min-width:0}
+.ans .t.en{font-family:var(--sans);direction:ltr;text-align:left;font-size:14.5px;color:var(--muted)}
 .chip{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;padding:2px 7px;border-radius:3px;justify-self:end;white-space:nowrap}
-.chip.correct{background:var(--g-correct);color:var(--bg)} .chip.wrong{border:1px solid var(--g-wrong-edge);color:var(--muted)} .chip.ref{background:var(--soft);color:var(--muted)}
+.chip.correct{background:var(--g-correct);color:var(--bg)} .chip.partial{background:var(--g-partial);color:var(--bg)} .chip.wrong{border:1px solid var(--g-wrong-edge);color:var(--muted)} .chip.ref{background:var(--soft);color:var(--muted)}
 .ex .why{font-size:14px;color:var(--muted);margin-top:10px}
-table{border-collapse:collapse;width:100%;font-size:15px}
-th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
-th{font-size:12.5px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:500}
-td.r,th.r{text-align:right;font-variant-numeric:tabular-nums}
-.tablebox{overflow-x:auto;margin:18px 0}
 ol.find{padding-left:22px;margin:0} ol.find li{margin:0 0 14px;max-width:68ch}
 ul.lim{padding-left:20px} ul.lim li{margin:0 0 8px;max-width:68ch}
 .note{border-left:3px solid var(--accent);background:var(--soft);padding:14px 18px;margin:24px 0;font-size:16px}
@@ -91,7 +91,6 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);font-si
 code{font-family:var(--mono);font-size:.88em;background:var(--soft);padding:1px 5px;border-radius:3px;word-break:break-all}
 @media (max-width:640px){
   body{font-size:16px}
-  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
   .grid-row{grid-template-columns:minmax(0,1fr)} .grid-row .sum{order:3}
   .cells{grid-template-columns:repeat(20,minmax(0,1fr))}
   .ans{grid-template-columns:minmax(0,1fr) auto} .ans .t{grid-column:1/-1;grid-row:2}
@@ -102,25 +101,26 @@ code{font-family:var(--mono);font-size:.88em;background:var(--soft);padding:1px 
 
 <header class="top"><div class="wrap">
   <div class="eyebrow"><span>Research note</span><span>Arabic legal AI</span><span>November 2026</span></div>
-  <h1>The best model fully answered 30 of 79 basic questions on Saudi law</h1>
-  <p class="dek">We asked GPT-6 Astra and Claude Opus 5.5 79 short, practical questions about Saudi legal procedure, fees and licensing, from memory and without search. These are the kind of questions a court portal's help page answers. Neither model could reliably retrieve them.</p>
-  <div class="byline">Mohamed Zaghoo · Questions from the public <a href="https://github.com/Thiqah/ArabLegalEval" target="_blank" rel="noopener">ArabLegalEval</a> Najiz set · Graded blind by Claude Sonnet 5.5</div>
+  <h1>With Saudi law named, the best of four frontier models fully answered 33 of 79 basic questions</h1>
+  <p class="dek">We asked Gemini 4 Carbon, GPT-6 Astra, Claude Opus 5.5 and Muse Spark 1.3 79 short, practical questions about Saudi legal procedure, fees and licensing, from memory and without search. These are the kind of questions a court portal's help page answers. No model could reliably retrieve them, and none fully answered a single licensing question.</p>
+  <div class="byline">Mohamed Zaghoo · Questions from the public <a href="https://github.com/Thiqah/ArabLegalEval" target="_blank" rel="noopener">ArabLegalEval</a> Najiz set · Graded blind by Claude Sonnet 5.5 · <a href="https://github.com/mzaghoo/najiz-closed-book-eval" target="_blank" rel="noopener">Data and code</a></div>
 </div></header>
 
 <main class="wrap">
-  <div class="stats">
-    <div class="stat"><div class="v num">30<small> / 79</small></div><div class="l"><span class="who"><i class="dot a"></i>GPT-6 Astra</span><br>answers fully correct</div></div>
-    <div class="stat"><div class="v num">12<small> / 79</small></div><div class="l"><span class="who"><i class="dot o"></i>Claude Opus 5.5</span><br>answers fully correct</div></div>
-    <div class="stat"><div class="v num">0.54 <small>vs</small> 0.40</div><div class="l">Mean rubric score, 0–1 (Astra vs Opus)</div></div>
-    <div class="stat"><div class="v num">0.00 <small>vs</small> 0.13</div><div class="l">Mean score on licensing questions (Astra vs Opus)</div></div>
+  <div class="tablebox">
+    <table class="lead">
+      <thead><tr><th>Model</th><th class="r">Correct</th><th class="r">Partial</th><th class="r">Wrong</th><th class="r">Mean score</th><th class="r">«لا أعرف»</th></tr></thead>
+      <tbody id="leadTable"></tbody>
+    </table>
   </div>
 
   <h2>What we found</h2>
   <ol class="find">
-    <li><strong>Simple facts are the weak point.</strong> These questions ask for a fee, a deadline or a list of conditions that a Saudi lawyer would look up in seconds. The stronger model was fully correct on 38% of them, and the other on 15%.</li>
-    <li><strong>Implementing regulations are a blind spot for both.</strong> Neither model fully answered any of the 10 licensing questions (lawyers, notaries, foreign law firms, enforcement providers). Court fees split the models: Astra recalled exactly half of the 16 fee and rate amounts, while Opus got 2 right and mostly guessed wrong.</li>
-    <li><strong>The models fail in different ways.</strong> Astra said «لا أعرف» ("I don't know") on 26 questions and was wrong on only 4 of the 53 it attempted. Opus attempted 73 and was graded wrong on 32 of them, including 9 wrong amounts or deadlines stated as fact.</li>
-    <li><strong>A correct principle is not a correct answer.</strong> Many answers named the right rule but left out the deadline, the exception or the conditions the reference requires. Under the rubric those count as partial, not correct.</li>
+    <li><strong>Simple facts are the weak point.</strong> These questions ask for a fee, a deadline or a list of conditions that a Saudi lawyer would look up in seconds. The best model was fully correct on 42% of them, and two of the four on 14–15%.</li>
+    <li><strong>Licensing is a blind spot for every model.</strong> None of the four fully answered any of the 10 licensing questions (lawyers, notaries, foreign law firms, enforcement providers). The best mean score there was 0.13.</li>
+    <li><strong>The models know different parts of Saudi law.</strong> Gemini leads on criminal procedure (0.92), enforcement (0.72) and family law (0.71). Astra leads on court fees: it recalled 8 of the 16 fee and rate amounts exactly, against 6 for Gemini and 2 each for Opus and Muse.</li>
+    <li><strong>They fail in different ways.</strong> Astra says «لا أعرف» when unsure and was wrong on only 7 of the 53 questions it attempted. Opus attempted 73 and was graded wrong on 40, including 8 wrong amounts or deadlines stated as fact. Gemini attempted 64 and was wrong on 11.</li>
+    <li><strong>Naming the jurisdiction matters.</strong> The questions never say "Saudi Arabia". Without it, Gemini and Muse often said the country was unspecified or answered in general terms. One added line raised Gemini's mean score from 0.47 to 0.59 and Muse's from 0.14 to 0.33.</li>
   </ol>
 
   <section class="wide">
@@ -132,20 +132,19 @@ code{font-family:var(--mono);font-size:.88em;background:var(--soft);padding:1px 
   </figure>
   </section>
 
-  <h2>Where the gap is</h2>
-  <p>Scores by area of law show where each model's knowledge thins out. Procedure and criminal procedure, which are set out in the main statutes, score highest for both. Licensing and family-law procedure, which mostly live in implementing regulations and ministry rules, score lowest.</p>
+  <h2>Where the gaps are</h2>
+  <p>All four models score highest on procedure set out in the main statutes and lowest on licensing rules and fee schedules, which mostly live in implementing regulations and ministry rules.</p>
   <section class="wide">
   <figure>
     <p class="fig-title">Mean rubric score by area of law</p>
-    <div class="legend"><span class="who"><i class="dot a"></i>GPT-6 Astra</span><span class="who"><i class="dot o"></i>Claude Opus 5.5</span></div>
-    <div class="svgbox"><svg id="dots" role="img" aria-label="Mean rubric score by area of law for both models"></svg></div>
-    <figcaption>Score from 0 to 1 under the rubric; n is the number of questions in each area. Areas were assigned by the author from each question's subject.</figcaption>
+    <div class="legend" id="dotLegend"></div>
+    <div class="svgbox"><svg id="dots" role="img" aria-label="Mean rubric score by area of law for four models"></svg></div>
+    <figcaption>Score from 0 to 1 under the rubric; n is the number of questions in each area. Where dots overlap, the table below gives the values. Areas were assigned by the author from each question's subject.</figcaption>
   </figure>
   </section>
-
   <div class="tablebox">
     <table>
-      <thead><tr><th>Area of law</th><th class="r">Questions</th><th class="r">Astra correct</th><th class="r">Opus correct</th></tr></thead>
+      <thead><tr><th>Area of law</th><th class="r">n</th><th class="r">Gemini</th><th class="r">Astra</th><th class="r">Opus</th><th class="r">Muse</th></tr></thead>
       <tbody id="areaTable"></tbody>
     </table>
   </div>
@@ -154,42 +153,53 @@ code{font-family:var(--mono);font-size:.88em;background:var(--soft);padding:1px 
   <p>Each example shows the reference answer from the benchmark and what each model said from memory.</p>
   <div class="examples">
     <div class="ex">
-      <div class="q">كم يبلغ مقدار التكاليف القضائية لطلبات التنفيذ المالية؟</div>
-      <div class="qen">Q14 · What are the court costs for a financial enforcement request?</div>
-      <div class="ans"><span class="src">Reference</span><span class="t">2% من قيمة المطالبة، على ألا تقل عن خمسمائة ريال ولا تزيد على عشرة آلاف ريال.</span><span class="chip ref">Ref</span></div>
-      <div class="ans"><span class="src who"><i class="dot a"></i>Astra</span><span class="t">اثنين في المائة من قيمة المطالبة، بحد أدنى خمسمائة ريال وحد أقصى عشرة آلاف ريال.</span><span class="chip correct">Correct</span></div>
-      <div class="ans"><span class="src who"><i class="dot o"></i>Opus</span><span class="t">لا أعرف المقدار بدقة؛ تخمين: نسبة من قيمة المطالبة يتحملها المنفذ ضده.</span><span class="chip wrong">Wrong</span></div>
-      <div class="why">Astra recalled the exact rate, minimum and maximum. Opus knew only that a percentage applies.</div>
+      <div class="q">كم تبلغ قيمة التكاليف القضائية لطلب التنفيذ المباشر؟</div>
+      <div class="qen">Q5 · What are the court costs for a direct enforcement request? Only Gemini knew.</div>
+      <div class="ans"><span class="src">Reference</span><span class="t">خمسمائة ريال.</span><span class="chip ref">Ref</span></div>
+      <div class="ans"><span class="src who"><i class="dot d-gemini"></i>Gemini 4 Carbon</span><span class="t">… تبلغ قيمة التكاليف القضائية لطلب التنفيذ المباشر (500) خمسمائة ريال سعودي …</span><span class="chip correct">Correct</span></div>
+      <div class="ans"><span class="src who"><i class="dot d-astra"></i>GPT-6 Astra</span><span class="t">لا أعرف</span><span class="chip wrong">Wrong</span></div>
+      <div class="ans"><span class="src who"><i class="dot d-opus"></i>Claude Opus 5.5</span><span class="t">لا أعرف المبلغ بدقة.</span><span class="chip wrong">Wrong</span></div>
+      <div class="ans"><span class="src who"><i class="dot d-muse"></i>Muse Spark 1.3</span><span class="t">لا أعرف</span><span class="chip wrong">Wrong</span></div>
     </div>
     <div class="ex">
-      <div class="q">كم تبلغ قيمة التكاليف القضائية للدعاوى التي تنظر لدى المحاكم والدوائر العمالية؟</div>
-      <div class="qen">Q10 · What are the court costs for cases heard in the labour courts?</div>
-      <div class="ans"><span class="src">Reference</span><span class="t">ألفا ريال.</span><span class="chip ref">Ref</span></div>
-      <div class="ans"><span class="src who"><i class="dot a"></i>Astra</span><span class="t">للدعوى العمالية غير محددة القيمة تكاليف قدرها ألفا ريال، مع مراعاة الإعفاء المقرر للعمال…</span><span class="chip correct">Correct</span></div>
-      <div class="ans"><span class="src who"><i class="dot o"></i>Opus</span><span class="t">الدعاوى العمالية المرفوعة من العامل معفاة من التكاليف القضائية.</span><span class="chip wrong">Wrong</span></div>
-      <div class="why">Opus stated the worker exemption as the whole answer and missed the 2,000-riyal fee that applies otherwise.</div>
+      <div class="q">كم يبلغ مقدار التكاليف القضائية لطلبات التنفيذ المالية؟</div>
+      <div class="qen">Q14 · What are the court costs for a financial enforcement request? Only Astra knew.</div>
+      <div class="ans"><span class="src">Reference</span><span class="t">2% من قيمة المطالبة، على ألا تقل عن خمسمائة ريال ولا تزيد على عشرة آلاف ريال.</span><span class="chip ref">Ref</span></div>
+      <div class="ans"><span class="src who"><i class="dot d-astra"></i>GPT-6 Astra</span><span class="t">اثنين في المائة من قيمة المطالبة، بحد أدنى خمسمائة ريال وحد أقصى عشرة آلاف ريال …</span><span class="chip correct">Correct</span></div>
+      <div class="ans"><span class="src who"><i class="dot d-gemini"></i>Gemini 4 Carbon</span><span class="t">لا أعرف.</span><span class="chip wrong">Wrong</span></div>
+      <div class="ans"><span class="src who"><i class="dot d-opus"></i>Claude Opus 5.5</span><span class="t">لا أعرف المقدار بدقة؛ تخمين: نسبة من قيمة المطالبة يتحملها المنفذ ضده.</span><span class="chip wrong">Wrong</span></div>
+      <div class="ans"><span class="src who"><i class="dot d-muse"></i>Muse Spark 1.3</span><span class="t">لا أعرف</span><span class="chip wrong">Wrong</span></div>
     </div>
     <div class="ex">
       <div class="q">ما هي شروط الحصول على رخصة المحاماة؟</div>
-      <div class="qen">Q47 · What are the conditions for a lawyer's licence?</div>
+      <div class="qen">Q47 · What are the conditions for a lawyer's licence? No model got it fully right.</div>
       <div class="ans"><span class="src">Reference</span><span class="t">… أن تتوافر لديه خبرة في طبيعة العمل لمدة لا تقل عن سنتين …</span><span class="chip ref">Ref</span></div>
-      <div class="ans"><span class="src who"><i class="dot a"></i>Astra</span><span class="t">لا أعرف</span><span class="chip wrong">Wrong</span></div>
-      <div class="ans"><span class="src who"><i class="dot o"></i>Opus</span><span class="t">… خبرة عملية (ثلاث سنوات أو أقل لحملة الدراسات العليا) …</span><span class="chip wrong">Wrong</span></div>
-      <div class="why">Opus listed most conditions correctly but gave the experience requirement as three years instead of two. A wrong period cuts the score by 70%.</div>
+      <div class="ans"><span class="src who"><i class="dot d-gemini"></i>Gemini 4 Carbon</span><span class="t en">Listed nationality, qualifications and good conduct, but left out the two-year experience requirement.</span><span class="chip partial">Partial</span></div>
+      <div class="ans"><span class="src who"><i class="dot d-astra"></i>GPT-6 Astra</span><span class="t">لا أعرف</span><span class="chip wrong">Wrong</span></div>
+      <div class="ans"><span class="src who"><i class="dot d-opus"></i>Claude Opus 5.5</span><span class="t">… خبرة عملية (ثلاث سنوات أو أقل لحملة الدراسات العليا) …</span><span class="chip wrong">Wrong</span></div>
+      <div class="ans"><span class="src who"><i class="dot d-muse"></i>Muse Spark 1.3</span><span class="t">… ولديه الخبرة العملية المطلوبة أو التدريب المهني …</span><span class="chip wrong">Wrong</span></div>
+      <div class="why">Opus gave the experience requirement as three years instead of two, and a wrong period cuts the score by 70%. Muse mentioned experience without a period.</div>
     </div>
   </div>
 
   <h2>What the low scores suggest</h2>
   <p>These are not reasoning tasks. Each question has a short, settled answer in a Saudi statute, regulation or ministry rule. When frontier models miss them, the likeliest explanation is that this material is thin in their training data: Saudi implementing regulations, fee schedules and licensing rules are published mostly in Arabic, change often, and are rarely discussed online in the way that, for example, US federal procedure is.</p>
-  <p>The pattern supports that reading. Both models did best on rules set out in the main statutes, which are widely reproduced, and worst on regulations and ministry procedures. This study cannot separate missing training data from other causes, such as rules changing after a model's training or the effect of asking in Arabic.</p>
-  <div class="note"><p>For anyone deploying legal AI in Saudi Arabia: closed-book answers to basic procedural questions are not yet reliable. A model needs current, cited sources, and a confident answer without one should be checked.</p></div>
+  <p>The pattern supports that reading. All four models did best on rules set out in the main statutes, which are widely reproduced, and worst on regulations and ministry procedures. This study cannot separate missing training data from other causes, such as rules changing after a model's training or the effect of asking in Arabic.</p>
+  <div class="note"><p>For anyone deploying legal AI in Saudi Arabia: closed-book answers to basic procedural questions are not yet reliable from any of these models, and the prompt must state the jurisdiction. A model needs current, cited sources, and a confident answer without one should be checked.</p></div>
 
-  <h2>How we tested</h2>
-  <h3>Questions</h3>
-  <p>All 79 questions in the public <a href="https://github.com/Thiqah/ArabLegalEval/blob/main/benchmarkQA/Najiz_QA_with_context_v2.benchmark.json" target="_blank" rel="noopener">Najiz QA set</a> from ArabLegalEval, with its reference answers. The benchmark supplies context passages; we did not, so this run measures recall from memory only.</p>
-  <h3>Answering</h3>
-  <p>Each model answered all 79 questions in Arabic from memory. Neither browsed the web or saw the reference answers before answering. Both were told to say «لا أعرف» rather than invent an answer. Each answer file was saved with a SHA-256 fingerprint before grading began.</p>
-  <h3>Rubric</h3>
+  <h2>How the models were run</h2>
+  <p>All four answered the same 79 questions in Arabic, closed-book, with the same core instructions: no browsing, tools or files; do not invent laws, amounts, article numbers or citations; say «لا أعرف» if unsure; at most 150 words. How each model learned that the questions concern Saudi law differed:</p>
+  <div class="tablebox"><table>
+    <thead><tr><th>Model</th><th>How it ran</th><th>Saudi context</th></tr></thead>
+    <tbody>
+      <tr><td><span class="who"><i class="dot d-gemini"></i>Gemini 4 Carbon</span></td><td>OpenRouter API, one call per question, default settings</td><td>One added instruction: <span dir="rtl" style="font-family:var(--arabic)">«أجب وفق الأنظمة المعمول بها في المملكة العربية السعودية»</span></td></tr>
+      <tr><td><span class="who"><i class="dot d-muse"></i>Muse Spark 1.3</span></td><td>OpenRouter API, one call per question, default settings</td><td>The same added instruction</td></tr>
+      <tr><td><span class="who"><i class="dot d-astra"></i>GPT-6 Astra</span></td><td>Codex, high reasoning effort, all 79 in one session</td><td>Implicit: the question file was named after Najiz, the Saudi Ministry of Justice portal</td></tr>
+      <tr><td><span class="who"><i class="dot d-opus"></i>Claude Opus 5.5</span></td><td>A Claude session already working on Saudi law, all 79 in one pass</td><td>Implicit: the session's prior work was on Saudi law and this benchmark</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>How we graded</h2>
   <p>We broke each reference answer into 270 required elements in total and weighted them by type:</p>
   <div class="tablebox"><table>
     <thead><tr><th>Element</th><th class="r">Weight</th></tr></thead>
@@ -202,63 +212,64 @@ code{font-family:var(--mono);font-size:.88em;background:var(--soft);padding:1px 
     </tbody>
   </table></div>
   <p>An answer that contradicts the reference scores 0. A wrong amount or timeline multiplies the score by 0.3. A wrong citation costs 2 points. Correct means a score of at least 0.85 with every core principle, deadline and amount present; partial means at least 0.40.</p>
-  <h3>Grading</h3>
-  <p>Claude Sonnet 5.5, a model that wrote neither answer set, graded both sets side by side with model names hidden. We recomputed all 158 scores from its element-by-element calls and found no arithmetic errors.</p>
+  <p>Claude Sonnet 5.5 graded all four answer sets one question at a time, at temperature 0. For each question it saw the reference, the rubric elements and the four answers labelled A–D in a fresh random order; the key never reached it. We recomputed all 316 scores from its element-by-element calls and found no arithmetic errors.</p>
 
   <h2>Limitations</h2>
   <ul class="lim">
-    <li><strong>One grader.</strong> Sonnet 5.5 is from the same family as Opus 5.5. That bias would favour Opus, yet Astra scored higher. No lawyer has reviewed the grader's close calls.</li>
-    <li><strong>One sample per model.</strong> Answers vary between runs. In an earlier two-question test, Astra gave the correct foreign law-office licence fee; in this run it answered «لا أعرف».</li>
+    <li><strong>Saudi context was not delivered identically.</strong> Gemini and Muse received one explicit instruction; Astra and Opus had implicit context of different strength. The answering setups also differed.</li>
+    <li><strong>One grader.</strong> Sonnet 5.5 is from the same family as Opus 5.5. That bias would favour Opus, which still ranked third. No lawyer has reviewed the grader's close calls.</li>
+    <li><strong>Grading noise.</strong> Astra's and Opus's unchanged answers were graded in two separate runs; their mean scores moved by up to 0.03. Smaller differences between models are not meaningful.</li>
+    <li><strong>One sample per model.</strong> Answers vary between runs, so a single run cannot separate ability from chance.</li>
     <li><strong>Small and Saudi-only.</strong> 79 questions, mostly procedure and fees, from one portal. The results do not cover other Arab jurisdictions or legal drafting.</li>
     <li><strong>Reference answers are the standard.</strong> A few reference answers do not directly answer their question, and some may be out of date.</li>
-    <li><strong>Possible contamination.</strong> The benchmark has been public since 2024 and may be in either model's training data.</li>
-    <li><strong>Closed-book only.</strong> With the benchmark's context passages, both models would likely score much higher. This run tests what the models know, not how well they read.</li>
+    <li><strong>Possible contamination.</strong> The benchmark has been public since 2024 and may be in any model's training data.</li>
+    <li><strong>Closed-book only.</strong> With the benchmark's context passages, all models would likely score much higher. This tests what the models know, not how well they read.</li>
   </ul>
 
   <h2>Next</h2>
-  <p>We plan to run the same questions with the benchmark's context passages, take several samples per model, add a second grader from a different model family, and have a Saudi lawyer review the disputed grades.</p>
+  <p>We plan to run the same questions with the benchmark's context passages, take several samples per model with identical instructions and settings, add a second grader from a different model family, and have a Saudi lawyer review the disputed grades.</p>
 
   <footer>
-    Answer files: Astra <code>756d706e…</code>, Opus <code>dea83df4…</code>. Rubric <code>68e1aaf5…</code>. Model names describe the requested settings, not independent confirmation of the serving model. No endorsement by any model provider or by the benchmark's authors is implied.
+    Answer files (SHA-256): Gemini <code>9ae3c835…</code>, Astra <code>756d706e…</code>, Opus <code>dea83df4…</code>, Muse <code>93404657…</code>. Rubric <code>68e1aaf5…</code>. All files and a verification script are at <a href="https://github.com/mzaghoo/najiz-closed-book-eval" target="_blank" rel="noopener">github.com/mzaghoo/najiz-closed-book-eval</a>. Model names describe the requested settings. No endorsement by any model provider or by the benchmark's authors is implied.
   </footer>
 </main>
 <div class="tip" id="tip" hidden></div>
 
 <script>
-const DATA = {"labels": {"astra": ["partial", "correct", "wrong", "wrong", "wrong", "wrong", "wrong", "correct", "correct", "correct", "wrong", "wrong", "wrong", "correct", "correct", "correct", "correct", "correct", "partial", "correct", "correct", "correct", "correct", "correct", "wrong", "wrong", "correct", "wrong", "wrong", "partial", "wrong", "correct", "wrong", "wrong", "partial", "partial", "correct", "wrong", "wrong", "partial", "partial", "correct", "correct", "correct", "correct", "wrong", "wrong", "wrong", "wrong", "wrong", "partial", "correct", "wrong", "wrong", "wrong", "correct", "wrong", "partial", "correct", "partial", "partial", "partial", "correct", "wrong", "partial", "correct", "correct", "partial", "correct", "correct", "correct", "partial", "partial", "partial", "partial", "wrong", "wrong", "partial", "wrong"], "opus": ["partial", "partial", "wrong", "wrong", "wrong", "correct", "wrong", "wrong", "wrong", "wrong", "wrong", "wrong", "wrong", "wrong", "correct", "wrong", "wrong", "wrong", "partial", "partial", "wrong", "correct", "partial", "partial", "wrong", "partial", "correct", "partial", "partial", "partial", "partial", "wrong", "wrong", "wrong", "wrong", "wrong", "correct", "wrong", "wrong", "wrong", "partial", "correct", "partial", "correct", "correct", "wrong", "wrong", "wrong", "wrong", "partial", "wrong", "partial", "wrong", "wrong", "partial", "correct", "wrong", "partial", "partial", "partial", "partial", "partial", "wrong", "wrong", "partial", "correct", "correct", "partial", "wrong", "partial", "correct", "partial", "partial", "partial", "partial", "wrong", "wrong", "partial", "wrong"]}, "scores": {"astra": [0.6, 0.875, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 0, 0, 0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.75, 1.0, 1.0, 0.875, 1.0, 0.857, 0.375, 0, 1.0, 0, 0, 0.417, 0, 1.0, 0, 0, 0.8, 0.833, 0.889, 0, 0, 0.833, 0.75, 0.857, 0.857, 1.0, 1.0, 0, 0, 0, 0, 0, 0.6, 1.0, 0, 0, 0, 0.857, 0, 0.6, 0.857, 0.75, 0.6, 0.833, 1.0, 0, 0.6, 1.0, 1.0, 0.75, 1.0, 1.0, 1.0, 0.8, 0.5, 0.667, 0.429, 0, 0, 0.625, 0.3], "opus": [0.6, 0.625, 0.0, 0.0, 0, 1.0, 0.0, 0.0, 0.0, 0.0, 0, 0, 0.0, 0, 1.0, 0, 0, 0, 0.75, 0.8, 0, 0.875, 0.6, 0.429, 0.375, 0.75, 1.0, 0.5, 0.5, 0.667, 0.5, 0, 0, 0, 0.2, 0.333, 0.889, 0.333, 0, 0.25, 0.75, 0.857, 0.714, 1.0, 1.0, 0, 0.112, 0, 0, 0.714, 0.3, 0.667, 0, 0, 0.75, 0.857, 0, 0.6, 0.429, 0.5, 0.6, 0.5, 0, 0.129, 0.6, 1.0, 1.0, 0.75, 0, 0.8, 1.0, 0.6, 0.5, 0.667, 0.429, 0, 0.0, 0.625, 0]}, "areas": [{"name": "Civil & commercial procedure", "n": 11, "astra": 0.786, "opus": 0.699, "ac": 8, "oc": 5}, {"name": "Criminal procedure", "n": 6, "astra": 0.808, "opus": 0.72, "ac": 3, "oc": 1}, {"name": "Court fees & judicial costs", "n": 27, "astra": 0.626, "opus": 0.288, "ac": 10, "oc": 3}, {"name": "Enforcement", "n": 16, "astra": 0.571, "opus": 0.417, "ac": 7, "oc": 2}, {"name": "Family & personal status", "n": 8, "astra": 0.352, "opus": 0.459, "ac": 2, "oc": 1}, {"name": "Licensing: lawyers, notaries, providers", "n": 10, "astra": 0.0, "opus": 0.129, "ac": 0, "oc": 0}, {"name": "Other: waqf documentation", "n": 1, "astra": 0.0, "opus": 0.0, "ac": 0, "oc": 0}]};
+const DATA = {"models": [{"key": "gemini", "name": "Gemini 4 Carbon", "c": 33, "p": 20, "w": 26, "mean": 0.591, "idk": 15, "labels": ["correct", "correct", "wrong", "wrong", "correct", "wrong", "wrong", "wrong", "correct", "wrong", "wrong", "wrong", "wrong", "wrong", "correct", "correct", "correct", "correct", "correct", "correct", "wrong", "correct", "partial", "correct", "partial", "partial", "correct", "wrong", "partial", "partial", "correct", "correct", "wrong", "wrong", "correct", "correct", "correct", "wrong", "wrong", "partial", "partial", "correct", "correct", "correct", "partial", "wrong", "partial", "partial", "wrong", "partial", "wrong", "correct", "wrong", "wrong", "wrong", "correct", "correct", "correct", "partial", "partial", "partial", "partial", "correct", "wrong", "partial", "correct", "correct", "correct", "correct", "correct", "wrong", "correct", "partial", "partial", "partial", "partial", "correct", "wrong", "wrong"], "scores": [1.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 0.8, 0.857, 0.5, 0.75, 1.0, 0.0, 0.833, 0.75, 1.0, 1.0, 0.0, 0.138, 1.0, 1.0, 1.0, 0.0, 0.0, 0.667, 0.75, 0.857, 0.857, 1.0, 0.5, 0.0, 0.5, 0.667, 0.125, 0.571, 0.15, 1.0, 0.0, 0.0, 0.0, 0.857, 1.0, 1.0, 0.429, 0.75, 0.6, 0.833, 1.0, 0.0, 0.6, 1.0, 1.0, 1.0, 1.0, 1.0, 0.333, 1.0, 0.5, 0.667, 0.714, 0.75, 1.0, 0.375, 0.0]}, {"key": "astra", "name": "GPT-6 Astra", "c": 28, "p": 18, "w": 33, "mean": 0.504, "idk": 26, "labels": ["wrong", "partial", "wrong", "wrong", "wrong", "wrong", "wrong", "correct", "correct", "correct", "wrong", "wrong", "wrong", "correct", "correct", "correct", "correct", "correct", "partial", "correct", "correct", "correct", "correct", "partial", "wrong", "wrong", "correct", "wrong", "wrong", "wrong", "wrong", "correct", "wrong", "wrong", "partial", "partial", "correct", "wrong", "wrong", "partial", "partial", "correct", "correct", "correct", "correct", "wrong", "wrong", "wrong", "wrong", "wrong", "partial", "correct", "wrong", "wrong", "wrong", "correct", "wrong", "wrong", "correct", "partial", "partial", "partial", "correct", "wrong", "partial", "correct", "correct", "partial", "correct", "correct", "correct", "partial", "partial", "partial", "partial", "wrong", "wrong", "partial", "wrong"], "scores": [0.0, 0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.75, 1.0, 1.0, 1.0, 1.0, 0.429, 0.375, 0.0, 1.0, 0.0, 0.0, 0.167, 0.0, 0.857, 0.0, 0.0, 0.8, 0.833, 0.889, 0.0, 0.0, 0.833, 0.75, 0.857, 0.857, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6, 1.0, 0.0, 0.0, 0.0, 0.857, 0.0, 0.0, 0.857, 0.75, 0.6, 0.833, 1.0, 0.0, 0.6, 1.0, 1.0, 0.75, 1.0, 1.0, 1.0, 0.6, 0.5, 0.667, 0.429, 0.0, 0.0, 0.625, 0.0]}, {"key": "opus", "name": "Claude Opus 5.5", "c": 12, "p": 21, "w": 46, "mean": 0.331, "idk": 6, "labels": ["wrong", "partial", "wrong", "wrong", "wrong", "correct", "wrong", "wrong", "wrong", "wrong", "wrong", "wrong", "wrong", "wrong", "correct", "wrong", "wrong", "wrong", "partial", "partial", "wrong", "correct", "partial", "wrong", "wrong", "partial", "correct", "partial", "partial", "partial", "partial", "wrong", "wrong", "wrong", "wrong", "wrong", "correct", "wrong", "wrong", "wrong", "partial", "correct", "wrong", "correct", "correct", "wrong", "wrong", "wrong", "wrong", "wrong", "wrong", "partial", "wrong", "wrong", "wrong", "correct", "wrong", "wrong", "partial", "wrong", "partial", "partial", "wrong", "wrong", "partial", "correct", "correct", "wrong", "wrong", "partial", "correct", "partial", "partial", "partial", "partial", "wrong", "wrong", "partial", "wrong"], "scores": [0.0, 0.625, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.75, 0.8, 0.0, 0.875, 0.6, 0.0, 0.375, 0.75, 1.0, 0.5, 0.5, 0.417, 0.5, 0.0, 0.0, 0.0, 0.2, 0.0, 0.889, 0.333, 0.0, 0.25, 0.75, 0.857, 0.286, 1.0, 1.0, 0.0, 0.037, 0.0, 0.0, 0.143, 0.3, 0.667, 0.0, 0.0, 0.0, 0.857, 0.0, 0.0, 0.429, 0.0, 0.6, 0.5, 0.0, 0.129, 0.6, 1.0, 1.0, 0.0, 0.0, 0.8, 1.0, 0.6, 0.5, 0.667, 0.429, 0.0, 0.0, 0.625, 0.0]}, {"key": "muse", "name": "Muse Spark 1.3", "c": 11, "p": 20, "w": 48, "mean": 0.326, "idk": 30, "labels": ["wrong", "partial", "wrong", "wrong", "wrong", "wrong", "wrong", "wrong", "wrong", "wrong", "wrong", "wrong", "wrong", "wrong", "correct", "wrong", "wrong", "correct", "partial", "partial", "wrong", "correct", "partial", "correct", "wrong", "partial", "correct", "wrong", "partial", "partial", "wrong", "wrong", "wrong", "wrong", "wrong", "wrong", "partial", "partial", "wrong", "wrong", "partial", "correct", "wrong", "partial", "correct", "wrong", "wrong", "wrong", "wrong", "wrong", "wrong", "wrong", "wrong", "wrong", "partial", "correct", "wrong", "wrong", "partial", "wrong", "partial", "partial", "partial", "wrong", "partial", "correct", "correct", "partial", "wrong", "correct", "wrong", "partial", "wrong", "partial", "wrong", "wrong", "wrong", "wrong", "wrong"], "scores": [0.0, 0.75, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.75, 0.8, 0.0, 0.875, 0.4, 0.857, 0.375, 0.75, 1.0, 0.0, 0.833, 0.667, 0.0, 0.0, 0.0, 0.154, 0.0, 0.0, 0.778, 0.667, 0.0, 0.0, 0.75, 1.0, 0.286, 0.5, 1.0, 0.0, 0.125, 0.0, 0.0, 0.286, 0.0, 0.0, 0.0, 0.0, 0.75, 0.857, 0.0, 0.0, 0.429, 0.0, 0.6, 0.5, 0.8, 0.0, 0.6, 1.0, 1.0, 0.75, 0.25, 1.0, 0.0, 0.6, 0.0, 0.667, 0.0, 0.0, 0.0, 0.375, 0.0]}], "areas": [{"name": "Civil & commercial procedure", "n": 11, "mean": {"gemini": 0.77, "astra": 0.77, "opus": 0.7, "muse": 0.65}}, {"name": "Criminal procedure", "n": 6, "mean": {"gemini": 0.92, "astra": 0.71, "opus": 0.49, "muse": 0.42}}, {"name": "Court fees & judicial costs", "n": 27, "mean": {"gemini": 0.49, "astra": 0.61, "opus": 0.23, "muse": 0.23}}, {"name": "Enforcement", "n": 16, "mean": {"gemini": 0.72, "astra": 0.48, "opus": 0.35, "muse": 0.34}}, {"name": "Family & personal status", "n": 8, "mean": {"gemini": 0.71, "astra": 0.34, "opus": 0.37, "muse": 0.41}}, {"name": "Licensing: lawyers, notaries, providers", "n": 10, "mean": {"gemini": 0.13, "astra": 0.0, "opus": 0.06, "muse": 0.12}}, {"name": "Other: waqf documentation", "n": 1, "mean": {"gemini": 0.75, "astra": 0.0, "opus": 0.0, "muse": 0.0}}]};
 (function(){
+  const M = DATA.models;
   const tip=document.getElementById('tip');
   function show(e,txt){tip.textContent=txt;tip.hidden=false;const r=e.target.getBoundingClientRect();
     tip.style.left=Math.min(window.innerWidth-tip.offsetWidth-8,Math.max(8,r.left+r.width/2-tip.offsetWidth/2))+'px';
     tip.style.top=Math.max(8,r.top-tip.offsetHeight-8)+'px';}
   function hide(){tip.hidden=true}
-  // waffle grids
+  function bind(el,t){el.addEventListener('mouseenter',e=>show(e,t));el.addEventListener('focus',e=>show(e,t));el.addEventListener('mouseleave',hide);el.addEventListener('blur',hide);}
+  const who=m=>`<span class="who"><i class="dot d-${m.key}"></i>${m.name}</span>`;
+  document.getElementById('leadTable').innerHTML=M.map((m,i)=>`<tr class="${i===0?'best':''}"><td>${who(m)}</td><td class="r">${m.c}</td><td class="r">${m.p}</td><td class="r">${m.w}</td><td class="r">${m.mean.toFixed(3)}</td><td class="r">${m.idk}</td></tr>`).join('');
   const g=document.getElementById('grids');
-  [['astra','GPT-6 Astra','a'],['opus','Claude Opus 5.5','o']].forEach(([k,name,c])=>{
+  M.forEach(m=>{
     const row=document.createElement('div');row.className='grid-row';
-    const L=DATA.labels[k]; const cnt={correct:0,partial:0,wrong:0}; L.forEach(x=>cnt[x]++);
-    row.innerHTML=`<div class="name"><span class="who"><i class="dot ${c}"></i>${name}</span></div><div class="cells" role="list"></div><div class="sum">${cnt.correct} correct · ${cnt.partial} partial · ${cnt.wrong} wrong</div>`;
+    row.innerHTML=`<div class="name">${who(m)}</div><div class="cells" role="list"></div><div class="sum">${m.c} correct · ${m.p} partial · ${m.w} wrong</div>`;
     const cells=row.querySelector('.cells');
-    L.forEach((lab,i)=>{const d=document.createElement('div');d.className='cell '+lab;d.tabIndex=0;d.setAttribute('role','listitem');
-      const t=`${name} · Q${i+1}: ${lab}, score ${DATA.scores[k][i].toFixed(2)}`;d.setAttribute('aria-label',t);
-      d.addEventListener('mouseenter',e=>show(e,t));d.addEventListener('focus',e=>show(e,t));d.addEventListener('mouseleave',hide);d.addEventListener('blur',hide);cells.appendChild(d)});
+    m.labels.forEach((lab,i)=>{const d=document.createElement('div');d.className='cell '+lab;d.tabIndex=0;d.setAttribute('role','listitem');
+      const t=`${m.name} · Q${i+1}: ${lab}, score ${m.scores[i].toFixed(2)}`;d.setAttribute('aria-label',t);bind(d,t);cells.appendChild(d)});
     g.appendChild(row);
   });
-  // dot plot
-  const svg=document.getElementById('dots'), A=DATA.areas, W=900, left=320, right=40, top=26, rowH=40, H=top+A.length*rowH+30;
-  svg.setAttribute('viewBox',`0 0 ${W} ${H}`); svg.style.minWidth='560px'; svg.style.width='100%';
+  document.getElementById('dotLegend').innerHTML=M.map(m=>`<span>${who(m)}</span>`).join('');
+  const svg=document.getElementById('dots'), A=DATA.areas, W=900, left=320, right=40, top=20, rowH=40, H=top+A.length*rowH+30;
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`); svg.style.minWidth='600px'; svg.style.width='100%';
   const x=v=>left+v*(W-left-right); const ns='http://www.w3.org/2000/svg';
   const el=(n,a,txt)=>{const e=document.createElementNS(ns,n);for(const k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;svg.appendChild(e);return e};
   [0,.25,.5,.75,1].forEach(v=>{el('line',{x1:x(v),x2:x(v),y1:top-8,y2:H-26,class:'gridl','stroke-width':1});el('text',{x:x(v),y:H-8,'text-anchor':'middle'},v.toFixed(2))});
-  A.forEach((a,i)=>{const y=top+i*rowH+rowH/2;
+  A.forEach((a,i)=>{const y=top+i*rowH+rowH/2; const vals=M.map(m=>a.mean[m.key]);
     el('text',{x:0,y:y+5,class:'lab'},a.name); el('text',{x:left-14,y:y+5,'text-anchor':'end'},'n='+a.n);
-    el('line',{x1:x(Math.min(a.astra,a.opus)),x2:x(Math.max(a.astra,a.opus)),y1:y,y2:y,stroke:'var(--rule)','stroke-width':3});
-    [['opus','var(--opus)'],['astra','var(--astra)']].forEach(([k,col])=>{
-      const c=el('circle',{cx:x(a[k]),cy:y,r:7,fill:col,stroke:'var(--surface)','stroke-width':2,tabindex:0});
-      const t=`${k==='astra'?'GPT-6 Astra':'Claude Opus 5.5'} · ${a.name}: ${a[k].toFixed(2)}`;
-      c.addEventListener('mouseenter',e=>show(e,t));c.addEventListener('focus',e=>show(e,t));c.addEventListener('mouseleave',hide);c.addEventListener('blur',hide);});
+    el('line',{x1:x(Math.min(...vals)),x2:x(Math.max(...vals)),y1:y,y2:y,stroke:'var(--rule)','stroke-width':3});
+    M.slice().reverse().forEach(m=>{const c=el('circle',{cx:x(a.mean[m.key]),cy:y,r:7,fill:`var(--${m.key})`,stroke:'var(--surface)','stroke-width':2,tabindex:0});
+      bind(c,`${m.name} · ${a.name}: ${a.mean[m.key].toFixed(2)}`);});
   });
-  document.getElementById('areaTable').innerHTML=A.map(a=>`<tr><td>${a.name}</td><td class="r">${a.n}</td><td class="r">${a.ac}</td><td class="r">${a.oc}</td></tr>`).join('');
+  document.getElementById('areaTable').innerHTML=A.map(a=>{const best=Math.max(...M.map(m=>a.mean[m.key]));
+    return `<tr><td>${a.name}</td><td class="r">${a.n}</td>`+['gemini','astra','opus','muse'].map(k=>`<td class="r" style="${a.mean[k]===best?'font-weight:600':''}">${a.mean[k].toFixed(2)}</td>`).join('')+'</tr>'}).join('');
 })();
 </script>
 

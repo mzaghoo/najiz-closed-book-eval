@@ -1,0 +1,1274 @@
+{
+ "anthropic/claude-opus-5.5": {
+  "1": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "2": {
+   "score": 0.625,
+   "label": "partial"
+  },
+  "3": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "4": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "5": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "6": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "7": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "8": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "9": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "10": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "11": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "12": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "13": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "14": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "15": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "16": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "17": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "18": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "19": {
+   "score": 0.75,
+   "label": "partial"
+  },
+  "20": {
+   "score": 0.8,
+   "label": "partial"
+  },
+  "21": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "22": {
+   "score": 0.875,
+   "label": "correct"
+  },
+  "23": {
+   "score": 0.6,
+   "label": "partial"
+  },
+  "24": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "25": {
+   "score": 0.375,
+   "label": "wrong"
+  },
+  "26": {
+   "score": 0.75,
+   "label": "partial"
+  },
+  "27": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "28": {
+   "score": 0.5,
+   "label": "partial"
+  },
+  "29": {
+   "score": 0.5,
+   "label": "partial"
+  },
+  "30": {
+   "score": 0.417,
+   "label": "partial"
+  },
+  "31": {
+   "score": 0.5,
+   "label": "partial"
+  },
+  "32": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "33": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "34": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "35": {
+   "score": 0.2,
+   "label": "wrong"
+  },
+  "36": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "37": {
+   "score": 0.889,
+   "label": "correct"
+  },
+  "38": {
+   "score": 0.333,
+   "label": "wrong"
+  },
+  "39": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "40": {
+   "score": 0.25,
+   "label": "wrong"
+  },
+  "41": {
+   "score": 0.75,
+   "label": "partial"
+  },
+  "42": {
+   "score": 0.857,
+   "label": "correct"
+  },
+  "43": {
+   "score": 0.286,
+   "label": "wrong"
+  },
+  "44": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "45": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "46": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "47": {
+   "score": 0.037,
+   "label": "wrong"
+  },
+  "48": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "49": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "50": {
+   "score": 0.143,
+   "label": "wrong"
+  },
+  "51": {
+   "score": 0.3,
+   "label": "wrong"
+  },
+  "52": {
+   "score": 0.667,
+   "label": "partial"
+  },
+  "53": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "54": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "55": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "56": {
+   "score": 0.857,
+   "label": "correct"
+  },
+  "57": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "58": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "59": {
+   "score": 0.429,
+   "label": "partial"
+  },
+  "60": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "61": {
+   "score": 0.6,
+   "label": "partial"
+  },
+  "62": {
+   "score": 0.5,
+   "label": "partial"
+  },
+  "63": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "64": {
+   "score": 0.129,
+   "label": "wrong"
+  },
+  "65": {
+   "score": 0.6,
+   "label": "partial"
+  },
+  "66": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "67": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "68": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "69": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "70": {
+   "score": 0.8,
+   "label": "partial"
+  },
+  "71": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "72": {
+   "score": 0.6,
+   "label": "partial"
+  },
+  "73": {
+   "score": 0.5,
+   "label": "partial"
+  },
+  "74": {
+   "score": 0.667,
+   "label": "partial"
+  },
+  "75": {
+   "score": 0.429,
+   "label": "partial"
+  },
+  "76": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "77": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "78": {
+   "score": 0.625,
+   "label": "partial"
+  },
+  "79": {
+   "score": 0.0,
+   "label": "wrong"
+  }
+ },
+ "google/gemini-4-carbon": {
+  "1": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "2": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "3": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "4": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "5": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "6": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "7": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "8": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "9": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "10": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "11": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "12": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "13": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "14": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "15": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "16": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "17": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "18": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "19": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "20": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "21": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "22": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "23": {
+   "score": 0.8,
+   "label": "partial"
+  },
+  "24": {
+   "score": 0.857,
+   "label": "correct"
+  },
+  "25": {
+   "score": 0.5,
+   "label": "partial"
+  },
+  "26": {
+   "score": 0.75,
+   "label": "partial"
+  },
+  "27": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "28": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "29": {
+   "score": 0.833,
+   "label": "partial"
+  },
+  "30": {
+   "score": 0.75,
+   "label": "partial"
+  },
+  "31": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "32": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "33": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "34": {
+   "score": 0.138,
+   "label": "wrong"
+  },
+  "35": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "36": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "37": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "38": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "39": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "40": {
+   "score": 0.667,
+   "label": "partial"
+  },
+  "41": {
+   "score": 0.75,
+   "label": "partial"
+  },
+  "42": {
+   "score": 0.857,
+   "label": "correct"
+  },
+  "43": {
+   "score": 0.857,
+   "label": "correct"
+  },
+  "44": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "45": {
+   "score": 0.5,
+   "label": "partial"
+  },
+  "46": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "47": {
+   "score": 0.5,
+   "label": "partial"
+  },
+  "48": {
+   "score": 0.667,
+   "label": "partial"
+  },
+  "49": {
+   "score": 0.125,
+   "label": "wrong"
+  },
+  "50": {
+   "score": 0.571,
+   "label": "partial"
+  },
+  "51": {
+   "score": 0.15,
+   "label": "wrong"
+  },
+  "52": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "53": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "54": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "55": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "56": {
+   "score": 0.857,
+   "label": "correct"
+  },
+  "57": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "58": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "59": {
+   "score": 0.429,
+   "label": "partial"
+  },
+  "60": {
+   "score": 0.75,
+   "label": "partial"
+  },
+  "61": {
+   "score": 0.6,
+   "label": "partial"
+  },
+  "62": {
+   "score": 0.833,
+   "label": "partial"
+  },
+  "63": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "64": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "65": {
+   "score": 0.6,
+   "label": "partial"
+  },
+  "66": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "67": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "68": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "69": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "70": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "71": {
+   "score": 0.333,
+   "label": "wrong"
+  },
+  "72": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "73": {
+   "score": 0.5,
+   "label": "partial"
+  },
+  "74": {
+   "score": 0.667,
+   "label": "partial"
+  },
+  "75": {
+   "score": 0.714,
+   "label": "partial"
+  },
+  "76": {
+   "score": 0.75,
+   "label": "partial"
+  },
+  "77": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "78": {
+   "score": 0.375,
+   "label": "wrong"
+  },
+  "79": {
+   "score": 0.0,
+   "label": "wrong"
+  }
+ },
+ "meta/muse-spark-1.3": {
+  "1": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "2": {
+   "score": 0.75,
+   "label": "partial"
+  },
+  "3": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "4": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "5": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "6": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "7": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "8": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "9": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "10": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "11": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "12": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "13": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "14": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "15": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "16": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "17": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "18": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "19": {
+   "score": 0.75,
+   "label": "partial"
+  },
+  "20": {
+   "score": 0.8,
+   "label": "partial"
+  },
+  "21": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "22": {
+   "score": 0.875,
+   "label": "correct"
+  },
+  "23": {
+   "score": 0.4,
+   "label": "partial"
+  },
+  "24": {
+   "score": 0.857,
+   "label": "correct"
+  },
+  "25": {
+   "score": 0.375,
+   "label": "wrong"
+  },
+  "26": {
+   "score": 0.75,
+   "label": "partial"
+  },
+  "27": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "28": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "29": {
+   "score": 0.833,
+   "label": "partial"
+  },
+  "30": {
+   "score": 0.667,
+   "label": "partial"
+  },
+  "31": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "32": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "33": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "34": {
+   "score": 0.154,
+   "label": "wrong"
+  },
+  "35": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "36": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "37": {
+   "score": 0.778,
+   "label": "partial"
+  },
+  "38": {
+   "score": 0.667,
+   "label": "partial"
+  },
+  "39": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "40": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "41": {
+   "score": 0.75,
+   "label": "partial"
+  },
+  "42": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "43": {
+   "score": 0.286,
+   "label": "wrong"
+  },
+  "44": {
+   "score": 0.5,
+   "label": "partial"
+  },
+  "45": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "46": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "47": {
+   "score": 0.125,
+   "label": "wrong"
+  },
+  "48": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "49": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "50": {
+   "score": 0.286,
+   "label": "wrong"
+  },
+  "51": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "52": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "53": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "54": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "55": {
+   "score": 0.75,
+   "label": "partial"
+  },
+  "56": {
+   "score": 0.857,
+   "label": "correct"
+  },
+  "57": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "58": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "59": {
+   "score": 0.429,
+   "label": "partial"
+  },
+  "60": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "61": {
+   "score": 0.6,
+   "label": "partial"
+  },
+  "62": {
+   "score": 0.5,
+   "label": "partial"
+  },
+  "63": {
+   "score": 0.8,
+   "label": "partial"
+  },
+  "64": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "65": {
+   "score": 0.6,
+   "label": "partial"
+  },
+  "66": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "67": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "68": {
+   "score": 0.75,
+   "label": "partial"
+  },
+  "69": {
+   "score": 0.25,
+   "label": "wrong"
+  },
+  "70": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "71": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "72": {
+   "score": 0.6,
+   "label": "partial"
+  },
+  "73": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "74": {
+   "score": 0.667,
+   "label": "partial"
+  },
+  "75": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "76": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "77": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "78": {
+   "score": 0.375,
+   "label": "wrong"
+  },
+  "79": {
+   "score": 0.0,
+   "label": "wrong"
+  }
+ },
+ "openai/gpt-6-astra": {
+  "1": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "2": {
+   "score": 0.75,
+   "label": "partial"
+  },
+  "3": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "4": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "5": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "6": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "7": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "8": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "9": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "10": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "11": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "12": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "13": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "14": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "15": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "16": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "17": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "18": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "19": {
+   "score": 0.75,
+   "label": "partial"
+  },
+  "20": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "21": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "22": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "23": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "24": {
+   "score": 0.429,
+   "label": "partial"
+  },
+  "25": {
+   "score": 0.375,
+   "label": "wrong"
+  },
+  "26": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "27": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "28": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "29": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "30": {
+   "score": 0.167,
+   "label": "wrong"
+  },
+  "31": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "32": {
+   "score": 0.857,
+   "label": "correct"
+  },
+  "33": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "34": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "35": {
+   "score": 0.8,
+   "label": "partial"
+  },
+  "36": {
+   "score": 0.833,
+   "label": "partial"
+  },
+  "37": {
+   "score": 0.889,
+   "label": "correct"
+  },
+  "38": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "39": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "40": {
+   "score": 0.833,
+   "label": "partial"
+  },
+  "41": {
+   "score": 0.75,
+   "label": "partial"
+  },
+  "42": {
+   "score": 0.857,
+   "label": "correct"
+  },
+  "43": {
+   "score": 0.857,
+   "label": "correct"
+  },
+  "44": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "45": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "46": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "47": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "48": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "49": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "50": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "51": {
+   "score": 0.6,
+   "label": "partial"
+  },
+  "52": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "53": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "54": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "55": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "56": {
+   "score": 0.857,
+   "label": "correct"
+  },
+  "57": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "58": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "59": {
+   "score": 0.857,
+   "label": "correct"
+  },
+  "60": {
+   "score": 0.75,
+   "label": "partial"
+  },
+  "61": {
+   "score": 0.6,
+   "label": "partial"
+  },
+  "62": {
+   "score": 0.833,
+   "label": "partial"
+  },
+  "63": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "64": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "65": {
+   "score": 0.6,
+   "label": "partial"
+  },
+  "66": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "67": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "68": {
+   "score": 0.75,
+   "label": "partial"
+  },
+  "69": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "70": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "71": {
+   "score": 1.0,
+   "label": "correct"
+  },
+  "72": {
+   "score": 0.6,
+   "label": "partial"
+  },
+  "73": {
+   "score": 0.5,
+   "label": "partial"
+  },
+  "74": {
+   "score": 0.667,
+   "label": "partial"
+  },
+  "75": {
+   "score": 0.429,
+   "label": "partial"
+  },
+  "76": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "77": {
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "78": {
+   "score": 0.625,
+   "label": "partial"
+  },
+  "79": {
+   "score": 0.0,
+   "label": "wrong"
+  }
+ }
+}

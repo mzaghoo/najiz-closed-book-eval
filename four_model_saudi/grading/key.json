@@ -1,0 +1,487 @@
+{
+ "answer_sha256": {
+  "openai/gpt-6-astra": "9e0fe7e146ba44fc4ece5c5327879f66212f06935c00a921a66ac09412717310",
+  "anthropic/claude-opus-5.5": "d97731376431abc8761663955b514c42a50e4b60741b9188ca47b3cb17629e75",
+  "google/gemini-4-carbon": "ee38543f6e2235cdd2268c0c9465c12a8d24fa4156b0bb8c3e6640522806bdca",
+  "meta/muse-spark-1.3": "b9e1799830010c4b8887b82d436f0f2458c6370cc7e80aa57aee7d9824d8b764"
+ },
+ "rubric_sha256": "68e1aaf55bb7887409db30c1b7229e6904efd437ac99c10f327892b8cdc3d180",
+ "grader": "anthropic/claude-sonnet-5.5",
+ "created": "2026-11-21T20:04:58+00:00",
+ "questions": {
+  "1": {
+   "A": "meta/muse-spark-1.3",
+   "B": "google/gemini-4-carbon",
+   "C": "openai/gpt-6-astra",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "2": {
+   "A": "openai/gpt-6-astra",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "google/gemini-4-carbon",
+   "D": "meta/muse-spark-1.3"
+  },
+  "3": {
+   "A": "anthropic/claude-opus-5.5",
+   "B": "openai/gpt-6-astra",
+   "C": "meta/muse-spark-1.3",
+   "D": "google/gemini-4-carbon"
+  },
+  "4": {
+   "A": "meta/muse-spark-1.3",
+   "B": "openai/gpt-6-astra",
+   "C": "google/gemini-4-carbon",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "5": {
+   "A": "openai/gpt-6-astra",
+   "B": "google/gemini-4-carbon",
+   "C": "meta/muse-spark-1.3",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "6": {
+   "A": "openai/gpt-6-astra",
+   "B": "google/gemini-4-carbon",
+   "C": "meta/muse-spark-1.3",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "7": {
+   "A": "openai/gpt-6-astra",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "google/gemini-4-carbon",
+   "D": "meta/muse-spark-1.3"
+  },
+  "8": {
+   "A": "meta/muse-spark-1.3",
+   "B": "openai/gpt-6-astra",
+   "C": "anthropic/claude-opus-5.5",
+   "D": "google/gemini-4-carbon"
+  },
+  "9": {
+   "A": "meta/muse-spark-1.3",
+   "B": "google/gemini-4-carbon",
+   "C": "openai/gpt-6-astra",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "10": {
+   "A": "google/gemini-4-carbon",
+   "B": "openai/gpt-6-astra",
+   "C": "meta/muse-spark-1.3",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "11": {
+   "A": "anthropic/claude-opus-5.5",
+   "B": "openai/gpt-6-astra",
+   "C": "google/gemini-4-carbon",
+   "D": "meta/muse-spark-1.3"
+  },
+  "12": {
+   "A": "openai/gpt-6-astra",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "meta/muse-spark-1.3",
+   "D": "google/gemini-4-carbon"
+  },
+  "13": {
+   "A": "anthropic/claude-opus-5.5",
+   "B": "openai/gpt-6-astra",
+   "C": "google/gemini-4-carbon",
+   "D": "meta/muse-spark-1.3"
+  },
+  "14": {
+   "A": "google/gemini-4-carbon",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "openai/gpt-6-astra",
+   "D": "meta/muse-spark-1.3"
+  },
+  "15": {
+   "A": "google/gemini-4-carbon",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "meta/muse-spark-1.3",
+   "D": "openai/gpt-6-astra"
+  },
+  "16": {
+   "A": "google/gemini-4-carbon",
+   "B": "openai/gpt-6-astra",
+   "C": "meta/muse-spark-1.3",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "17": {
+   "A": "anthropic/claude-opus-5.5",
+   "B": "meta/muse-spark-1.3",
+   "C": "google/gemini-4-carbon",
+   "D": "openai/gpt-6-astra"
+  },
+  "18": {
+   "A": "openai/gpt-6-astra",
+   "B": "meta/muse-spark-1.3",
+   "C": "google/gemini-4-carbon",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "19": {
+   "A": "meta/muse-spark-1.3",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "openai/gpt-6-astra",
+   "D": "google/gemini-4-carbon"
+  },
+  "20": {
+   "A": "openai/gpt-6-astra",
+   "B": "google/gemini-4-carbon",
+   "C": "anthropic/claude-opus-5.5",
+   "D": "meta/muse-spark-1.3"
+  },
+  "21": {
+   "A": "anthropic/claude-opus-5.5",
+   "B": "google/gemini-4-carbon",
+   "C": "meta/muse-spark-1.3",
+   "D": "openai/gpt-6-astra"
+  },
+  "22": {
+   "A": "google/gemini-4-carbon",
+   "B": "meta/muse-spark-1.3",
+   "C": "openai/gpt-6-astra",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "23": {
+   "A": "meta/muse-spark-1.3",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "openai/gpt-6-astra",
+   "D": "google/gemini-4-carbon"
+  },
+  "24": {
+   "A": "meta/muse-spark-1.3",
+   "B": "google/gemini-4-carbon",
+   "C": "openai/gpt-6-astra",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "25": {
+   "A": "openai/gpt-6-astra",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "google/gemini-4-carbon",
+   "D": "meta/muse-spark-1.3"
+  },
+  "26": {
+   "A": "google/gemini-4-carbon",
+   "B": "meta/muse-spark-1.3",
+   "C": "openai/gpt-6-astra",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "27": {
+   "A": "anthropic/claude-opus-5.5",
+   "B": "meta/muse-spark-1.3",
+   "C": "openai/gpt-6-astra",
+   "D": "google/gemini-4-carbon"
+  },
+  "28": {
+   "A": "meta/muse-spark-1.3",
+   "B": "openai/gpt-6-astra",
+   "C": "anthropic/claude-opus-5.5",
+   "D": "google/gemini-4-carbon"
+  },
+  "29": {
+   "A": "openai/gpt-6-astra",
+   "B": "meta/muse-spark-1.3",
+   "C": "anthropic/claude-opus-5.5",
+   "D": "google/gemini-4-carbon"
+  },
+  "30": {
+   "A": "google/gemini-4-carbon",
+   "B": "openai/gpt-6-astra",
+   "C": "meta/muse-spark-1.3",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "31": {
+   "A": "anthropic/claude-opus-5.5",
+   "B": "meta/muse-spark-1.3",
+   "C": "google/gemini-4-carbon",
+   "D": "openai/gpt-6-astra"
+  },
+  "32": {
+   "A": "google/gemini-4-carbon",
+   "B": "meta/muse-spark-1.3",
+   "C": "openai/gpt-6-astra",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "33": {
+   "A": "anthropic/claude-opus-5.5",
+   "B": "openai/gpt-6-astra",
+   "C": "meta/muse-spark-1.3",
+   "D": "google/gemini-4-carbon"
+  },
+  "34": {
+   "A": "anthropic/claude-opus-5.5",
+   "B": "openai/gpt-6-astra",
+   "C": "meta/muse-spark-1.3",
+   "D": "google/gemini-4-carbon"
+  },
+  "35": {
+   "A": "openai/gpt-6-astra",
+   "B": "meta/muse-spark-1.3",
+   "C": "google/gemini-4-carbon",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "36": {
+   "A": "anthropic/claude-opus-5.5",
+   "B": "meta/muse-spark-1.3",
+   "C": "openai/gpt-6-astra",
+   "D": "google/gemini-4-carbon"
+  },
+  "37": {
+   "A": "meta/muse-spark-1.3",
+   "B": "openai/gpt-6-astra",
+   "C": "anthropic/claude-opus-5.5",
+   "D": "google/gemini-4-carbon"
+  },
+  "38": {
+   "A": "openai/gpt-6-astra",
+   "B": "google/gemini-4-carbon",
+   "C": "anthropic/claude-opus-5.5",
+   "D": "meta/muse-spark-1.3"
+  },
+  "39": {
+   "A": "openai/gpt-6-astra",
+   "B": "meta/muse-spark-1.3",
+   "C": "google/gemini-4-carbon",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "40": {
+   "A": "google/gemini-4-carbon",
+   "B": "meta/muse-spark-1.3",
+   "C": "openai/gpt-6-astra",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "41": {
+   "A": "meta/muse-spark-1.3",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "openai/gpt-6-astra",
+   "D": "google/gemini-4-carbon"
+  },
+  "42": {
+   "A": "meta/muse-spark-1.3",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "google/gemini-4-carbon",
+   "D": "openai/gpt-6-astra"
+  },
+  "43": {
+   "A": "anthropic/claude-opus-5.5",
+   "B": "openai/gpt-6-astra",
+   "C": "meta/muse-spark-1.3",
+   "D": "google/gemini-4-carbon"
+  },
+  "44": {
+   "A": "openai/gpt-6-astra",
+   "B": "google/gemini-4-carbon",
+   "C": "anthropic/claude-opus-5.5",
+   "D": "meta/muse-spark-1.3"
+  },
+  "45": {
+   "A": "anthropic/claude-opus-5.5",
+   "B": "meta/muse-spark-1.3",
+   "C": "openai/gpt-6-astra",
+   "D": "google/gemini-4-carbon"
+  },
+  "46": {
+   "A": "openai/gpt-6-astra",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "meta/muse-spark-1.3",
+   "D": "google/gemini-4-carbon"
+  },
+  "47": {
+   "A": "anthropic/claude-opus-5.5",
+   "B": "google/gemini-4-carbon",
+   "C": "meta/muse-spark-1.3",
+   "D": "openai/gpt-6-astra"
+  },
+  "48": {
+   "A": "meta/muse-spark-1.3",
+   "B": "openai/gpt-6-astra",
+   "C": "anthropic/claude-opus-5.5",
+   "D": "google/gemini-4-carbon"
+  },
+  "49": {
+   "A": "google/gemini-4-carbon",
+   "B": "meta/muse-spark-1.3",
+   "C": "openai/gpt-6-astra",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "50": {
+   "A": "openai/gpt-6-astra",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "google/gemini-4-carbon",
+   "D": "meta/muse-spark-1.3"
+  },
+  "51": {
+   "A": "openai/gpt-6-astra",
+   "B": "google/gemini-4-carbon",
+   "C": "meta/muse-spark-1.3",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "52": {
+   "A": "meta/muse-spark-1.3",
+   "B": "openai/gpt-6-astra",
+   "C": "anthropic/claude-opus-5.5",
+   "D": "google/gemini-4-carbon"
+  },
+  "53": {
+   "A": "openai/gpt-6-astra",
+   "B": "meta/muse-spark-1.3",
+   "C": "google/gemini-4-carbon",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "54": {
+   "A": "openai/gpt-6-astra",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "meta/muse-spark-1.3",
+   "D": "google/gemini-4-carbon"
+  },
+  "55": {
+   "A": "meta/muse-spark-1.3",
+   "B": "google/gemini-4-carbon",
+   "C": "anthropic/claude-opus-5.5",
+   "D": "openai/gpt-6-astra"
+  },
+  "56": {
+   "A": "google/gemini-4-carbon",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "meta/muse-spark-1.3",
+   "D": "openai/gpt-6-astra"
+  },
+  "57": {
+   "A": "anthropic/claude-opus-5.5",
+   "B": "meta/muse-spark-1.3",
+   "C": "google/gemini-4-carbon",
+   "D": "openai/gpt-6-astra"
+  },
+  "58": {
+   "A": "openai/gpt-6-astra",
+   "B": "google/gemini-4-carbon",
+   "C": "anthropic/claude-opus-5.5",
+   "D": "meta/muse-spark-1.3"
+  },
+  "59": {
+   "A": "meta/muse-spark-1.3",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "openai/gpt-6-astra",
+   "D": "google/gemini-4-carbon"
+  },
+  "60": {
+   "A": "meta/muse-spark-1.3",
+   "B": "google/gemini-4-carbon",
+   "C": "openai/gpt-6-astra",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "61": {
+   "A": "meta/muse-spark-1.3",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "google/gemini-4-carbon",
+   "D": "openai/gpt-6-astra"
+  },
+  "62": {
+   "A": "anthropic/claude-opus-5.5",
+   "B": "google/gemini-4-carbon",
+   "C": "meta/muse-spark-1.3",
+   "D": "openai/gpt-6-astra"
+  },
+  "63": {
+   "A": "meta/muse-spark-1.3",
+   "B": "google/gemini-4-carbon",
+   "C": "openai/gpt-6-astra",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "64": {
+   "A": "google/gemini-4-carbon",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "meta/muse-spark-1.3",
+   "D": "openai/gpt-6-astra"
+  },
+  "65": {
+   "A": "openai/gpt-6-astra",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "google/gemini-4-carbon",
+   "D": "meta/muse-spark-1.3"
+  },
+  "66": {
+   "A": "openai/gpt-6-astra",
+   "B": "meta/muse-spark-1.3",
+   "C": "google/gemini-4-carbon",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "67": {
+   "A": "openai/gpt-6-astra",
+   "B": "meta/muse-spark-1.3",
+   "C": "anthropic/claude-opus-5.5",
+   "D": "google/gemini-4-carbon"
+  },
+  "68": {
+   "A": "google/gemini-4-carbon",
+   "B": "meta/muse-spark-1.3",
+   "C": "anthropic/claude-opus-5.5",
+   "D": "openai/gpt-6-astra"
+  },
+  "69": {
+   "A": "anthropic/claude-opus-5.5",
+   "B": "openai/gpt-6-astra",
+   "C": "google/gemini-4-carbon",
+   "D": "meta/muse-spark-1.3"
+  },
+  "70": {
+   "A": "google/gemini-4-carbon",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "openai/gpt-6-astra",
+   "D": "meta/muse-spark-1.3"
+  },
+  "71": {
+   "A": "anthropic/claude-opus-5.5",
+   "B": "meta/muse-spark-1.3",
+   "C": "openai/gpt-6-astra",
+   "D": "google/gemini-4-carbon"
+  },
+  "72": {
+   "A": "openai/gpt-6-astra",
+   "B": "meta/muse-spark-1.3",
+   "C": "anthropic/claude-opus-5.5",
+   "D": "google/gemini-4-carbon"
+  },
+  "73": {
+   "A": "meta/muse-spark-1.3",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "openai/gpt-6-astra",
+   "D": "google/gemini-4-carbon"
+  },
+  "74": {
+   "A": "openai/gpt-6-astra",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "google/gemini-4-carbon",
+   "D": "meta/muse-spark-1.3"
+  },
+  "75": {
+   "A": "openai/gpt-6-astra",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "meta/muse-spark-1.3",
+   "D": "google/gemini-4-carbon"
+  },
+  "76": {
+   "A": "google/gemini-4-carbon",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "openai/gpt-6-astra",
+   "D": "meta/muse-spark-1.3"
+  },
+  "77": {
+   "A": "anthropic/claude-opus-5.5",
+   "B": "google/gemini-4-carbon",
+   "C": "openai/gpt-6-astra",
+   "D": "meta/muse-spark-1.3"
+  },
+  "78": {
+   "A": "google/gemini-4-carbon",
+   "B": "openai/gpt-6-astra",
+   "C": "meta/muse-spark-1.3",
+   "D": "anthropic/claude-opus-5.5"
+  },
+  "79": {
+   "A": "meta/muse-spark-1.3",
+   "B": "anthropic/claude-opus-5.5",
+   "C": "google/gemini-4-carbon",
+   "D": "openai/gpt-6-astra"
+  }
+ }
+}
