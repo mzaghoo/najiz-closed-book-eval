@@ -1,0 +1,1587 @@
+{
+ "A": {
+  "1": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.6,
+   "label": "partial"
+  },
+  "2": {
+   "met": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.875,
+   "label": "correct"
+  },
+  "3": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "4": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "5": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "6": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "7": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "8": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "9": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "10": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "11": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "12": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "13": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "14": {
+   "met": [
+    0,
+    1,
+    2
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "15": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "16": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "17": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "18": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "19": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.75,
+   "label": "partial"
+  },
+  "20": {
+   "met": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "21": {
+   "met": [
+    0,
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "22": {
+   "met": [
+    0,
+    1,
+    3
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.875,
+   "label": "correct"
+  },
+  "23": {
+   "met": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "24": {
+   "met": [
+    0,
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.857,
+   "label": "correct"
+  },
+  "25": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.375,
+   "label": "wrong"
+  },
+  "26": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "27": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "28": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "29": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "30": {
+   "met": [
+    0,
+    3,
+    5
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.417,
+   "label": "partial"
+  },
+  "31": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "32": {
+   "met": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "33": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "34": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "35": {
+   "met": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.8,
+   "label": "partial"
+  },
+  "36": {
+   "met": [
+    0,
+    1,
+    2,
+    3,
+    5
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.833,
+   "label": "partial"
+  },
+  "37": {
+   "met": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.889,
+   "label": "correct"
+  },
+  "38": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "39": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "40": {
+   "met": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.833,
+   "label": "partial"
+  },
+  "41": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.75,
+   "label": "partial"
+  },
+  "42": {
+   "met": [
+    0,
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.857,
+   "label": "correct"
+  },
+  "43": {
+   "met": [
+    0,
+    1,
+    2
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.857,
+   "label": "correct"
+  },
+  "44": {
+   "met": [
+    0,
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "45": {
+   "met": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "46": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "47": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "48": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "49": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "50": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "51": {
+   "met": [
+    0,
+    1,
+    2,
+    7
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.6,
+   "label": "partial"
+  },
+  "52": {
+   "met": [
+    0,
+    1,
+    2
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "53": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "54": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "55": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "56": {
+   "met": [
+    0,
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.857,
+   "label": "correct"
+  },
+  "57": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "58": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.6,
+   "label": "partial"
+  },
+  "59": {
+   "met": [
+    0,
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.857,
+   "label": "correct"
+  },
+  "60": {
+   "met": [
+    0,
+    1,
+    2
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.75,
+   "label": "partial"
+  },
+  "61": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.6,
+   "label": "partial"
+  },
+  "62": {
+   "met": [
+    0,
+    1,
+    3
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.833,
+   "label": "partial"
+  },
+  "63": {
+   "met": [
+    0,
+    1,
+    2
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "64": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "65": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.6,
+   "label": "partial"
+  },
+  "66": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "67": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "68": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.75,
+   "label": "partial"
+  },
+  "69": {
+   "met": [
+    0,
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "70": {
+   "met": [
+    0,
+    1,
+    2
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "71": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "72": {
+   "met": [
+    0,
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.8,
+   "label": "partial"
+  },
+  "73": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.5,
+   "label": "partial"
+  },
+  "74": {
+   "met": [
+    0,
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.667,
+   "label": "partial"
+  },
+  "75": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.429,
+   "label": "partial"
+  },
+  "76": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "77": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "78": {
+   "met": [
+    0,
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.625,
+   "label": "partial"
+  },
+  "79": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.3,
+   "label": "wrong"
+  }
+ },
+ "B": {
+  "1": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.6,
+   "label": "partial"
+  },
+  "2": {
+   "met": [
+    0,
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.625,
+   "label": "partial"
+  },
+  "3": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": "10,000 ريال",
+   "wrong_citations": [],
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "4": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": "10,000 ريال",
+   "wrong_citations": [],
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "5": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "6": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "7": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": "50 ريالاً",
+   "wrong_citations": [],
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "8": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": "5% بحد أعلى مليون",
+   "wrong_citations": [],
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "9": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": "5% بحد أعلى مليون",
+   "wrong_citations": [],
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "10": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": "معفاة من التكاليف",
+   "wrong_citations": [],
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "11": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "12": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "13": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": "خمسة أيام",
+   "wrong_citations": [],
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "14": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "15": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "16": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "17": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "18": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "19": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.75,
+   "label": "partial"
+  },
+  "20": {
+   "met": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.8,
+   "label": "partial"
+  },
+  "21": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "22": {
+   "met": [
+    0,
+    1,
+    3
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.875,
+   "label": "correct"
+  },
+  "23": {
+   "met": [
+    0,
+    2,
+    4
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.6,
+   "label": "partial"
+  },
+  "24": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.429,
+   "label": "partial"
+  },
+  "25": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.375,
+   "label": "wrong"
+  },
+  "26": {
+   "met": [
+    0,
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.75,
+   "label": "partial"
+  },
+  "27": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "28": {
+   "met": [
+    1,
+    2
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.5,
+   "label": "partial"
+  },
+  "29": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.5,
+   "label": "partial"
+  },
+  "30": {
+   "met": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    7
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.667,
+   "label": "partial"
+  },
+  "31": {
+   "met": [
+    0,
+    3
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.5,
+   "label": "partial"
+  },
+  "32": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "33": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "34": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "35": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.2,
+   "label": "wrong"
+  },
+  "36": {
+   "met": [
+    0,
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.333,
+   "label": "wrong"
+  },
+  "37": {
+   "met": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.889,
+   "label": "correct"
+  },
+  "38": {
+   "met": [
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.333,
+   "label": "wrong"
+  },
+  "39": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "40": {
+   "met": [
+    2,
+    9,
+    10
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.25,
+   "label": "wrong"
+  },
+  "41": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.75,
+   "label": "partial"
+  },
+  "42": {
+   "met": [
+    0,
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.857,
+   "label": "correct"
+  },
+  "43": {
+   "met": [
+    0,
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.714,
+   "label": "partial"
+  },
+  "44": {
+   "met": [
+    0,
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "45": {
+   "met": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "46": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "47": {
+   "met": [
+    0,
+    1,
+    4
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": "خبرة ثلاث سنوات",
+   "wrong_citations": [],
+   "score": 0.112,
+   "label": "wrong"
+  },
+  "48": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "49": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "50": {
+   "met": [
+    0,
+    1,
+    3,
+    4,
+    5
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.714,
+   "label": "partial"
+  },
+  "51": {
+   "met": [
+    1,
+    6,
+    7
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.3,
+   "label": "wrong"
+  },
+  "52": {
+   "met": [
+    0,
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.667,
+   "label": "partial"
+  },
+  "53": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "54": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "55": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.75,
+   "label": "partial"
+  },
+  "56": {
+   "met": [
+    0,
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.857,
+   "label": "correct"
+  },
+  "57": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "58": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.6,
+   "label": "partial"
+  },
+  "59": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.429,
+   "label": "partial"
+  },
+  "60": {
+   "met": [
+    1,
+    2
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.5,
+   "label": "partial"
+  },
+  "61": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.6,
+   "label": "partial"
+  },
+  "62": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.5,
+   "label": "partial"
+  },
+  "63": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "64": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": "خمس سنوات (دون تمييز بين الحالتين)",
+   "wrong_citations": [],
+   "score": 0.129,
+   "label": "wrong"
+  },
+  "65": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.6,
+   "label": "partial"
+  },
+  "66": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "67": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "68": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.75,
+   "label": "partial"
+  },
+  "69": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "70": {
+   "met": [
+    0,
+    2
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.8,
+   "label": "partial"
+  },
+  "71": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 1.0,
+   "label": "correct"
+  },
+  "72": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.6,
+   "label": "partial"
+  },
+  "73": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.5,
+   "label": "partial"
+  },
+  "74": {
+   "met": [
+    0,
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.667,
+   "label": "partial"
+  },
+  "75": {
+   "met": [
+    0
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.429,
+   "label": "partial"
+  },
+  "76": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  },
+  "77": {
+   "met": [],
+   "gate_failure": "نعم، يجوز بالاتفاق أو بقرار قاضي التنفيذ بحسب المصلحة (يخالف تحديد الاختصاص ببلد الحضانة/الزيارة في السند)",
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.0,
+   "label": "wrong"
+  },
+  "78": {
+   "met": [
+    0,
+    1
+   ],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0.625,
+   "label": "partial"
+  },
+  "79": {
+   "met": [],
+   "gate_failure": null,
+   "wrong_amount_or_timeline": null,
+   "wrong_citations": [],
+   "score": 0,
+   "label": "wrong"
+  }
+ }
+}

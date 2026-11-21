@@ -1,0 +1,16 @@
+{
+ "A": {
+  "model": "gpt-6-astra",
+  "sha256": "69d99dd9d0dddacd250a6491f2f224660e0ee764b4195b3adf6302dfc7a8a147"
+ },
+ "B": {
+  "model": "claude-opus-5.5",
+  "sha256": "7b050748e007e64d77f927529f0e85c3f8d7228040f26856c80a71b1351872df"
+ },
+ "source_answer_sha256": {
+  "claude-opus-5.5": "dea83df461c0a612e1f5b8097d9c5b5c828e4bda725de83c5740eaee4271a7b8",
+  "gpt-6-astra": "756d706e963a6298d8d9628e867a4cac9db39b4d8263625547471b0a3e330aac"
+ },
+ "rubric_sha256": "68e1aaf55bb7887409db30c1b7229e6904efd437ac99c10f327892b8cdc3d180",
+ "note": "A/B were assigned at random before grading; the grader never saw this file."
+}

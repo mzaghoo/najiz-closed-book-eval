@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 160" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13">
+<circle cx="6" cy="20" r="5" fill="#2F81C4"/><text x="18" y="24" fill="#8B949E" font-weight="600">GPT-6 Astra</text>
+<text x="18" y="42" fill="#8B949E" font-size="12">30 correct · 19 partial · 30 wrong</text>
+<rect x="230.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4" fill-opacity="0.4"><title>Q1: partial</title></rect>
+<rect x="246.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q2: correct</title></rect>
+<rect x="262.5" y="12.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q3: wrong</title></rect>
+<rect x="278.5" y="12.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q4: wrong</title></rect>
+<rect x="294.5" y="12.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q5: wrong</title></rect>
+<rect x="310.5" y="12.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q6: wrong</title></rect>
+<rect x="326.5" y="12.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q7: wrong</title></rect>
+<rect x="342.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q8: correct</title></rect>
+<rect x="358.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q9: correct</title></rect>
+<rect x="374.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q10: correct</title></rect>
+<rect x="390.5" y="12.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q11: wrong</title></rect>
+<rect x="406.5" y="12.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q12: wrong</title></rect>
+<rect x="422.5" y="12.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q13: wrong</title></rect>
+<rect x="438.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q14: correct</title></rect>
+<rect x="454.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q15: correct</title></rect>
+<rect x="470.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q16: correct</title></rect>
+<rect x="486.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q17: correct</title></rect>
+<rect x="502.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q18: correct</title></rect>
+<rect x="518.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4" fill-opacity="0.4"><title>Q19: partial</title></rect>
+<rect x="534.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q20: correct</title></rect>
+<rect x="550.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q21: correct</title></rect>
+<rect x="566.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q22: correct</title></rect>
+<rect x="582.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q23: correct</title></rect>
+<rect x="598.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q24: correct</title></rect>
+<rect x="614.5" y="12.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q25: wrong</title></rect>
+<rect x="630.5" y="12.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q26: wrong</title></rect>
+<rect x="646.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q27: correct</title></rect>
+<rect x="662.5" y="12.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q28: wrong</title></rect>
+<rect x="678.5" y="12.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q29: wrong</title></rect>
+<rect x="694.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4" fill-opacity="0.4"><title>Q30: partial</title></rect>
+<rect x="710.5" y="12.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q31: wrong</title></rect>
+<rect x="726.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q32: correct</title></rect>
+<rect x="742.5" y="12.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q33: wrong</title></rect>
+<rect x="758.5" y="12.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q34: wrong</title></rect>
+<rect x="774.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4" fill-opacity="0.4"><title>Q35: partial</title></rect>
+<rect x="790.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4" fill-opacity="0.4"><title>Q36: partial</title></rect>
+<rect x="806.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q37: correct</title></rect>
+<rect x="822.5" y="12.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q38: wrong</title></rect>
+<rect x="838.5" y="12.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q39: wrong</title></rect>
+<rect x="854.5" y="12.5" width="13" height="13" rx="2" fill="#2F81C4" fill-opacity="0.4"><title>Q40: partial</title></rect>
+<rect x="230.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4" fill-opacity="0.4"><title>Q41: partial</title></rect>
+<rect x="246.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q42: correct</title></rect>
+<rect x="262.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q43: correct</title></rect>
+<rect x="278.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q44: correct</title></rect>
+<rect x="294.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q45: correct</title></rect>
+<rect x="310.5" y="28.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q46: wrong</title></rect>
+<rect x="326.5" y="28.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q47: wrong</title></rect>
+<rect x="342.5" y="28.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q48: wrong</title></rect>
+<rect x="358.5" y="28.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q49: wrong</title></rect>
+<rect x="374.5" y="28.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q50: wrong</title></rect>
+<rect x="390.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4" fill-opacity="0.4"><title>Q51: partial</title></rect>
+<rect x="406.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q52: correct</title></rect>
+<rect x="422.5" y="28.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q53: wrong</title></rect>
+<rect x="438.5" y="28.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q54: wrong</title></rect>
+<rect x="454.5" y="28.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q55: wrong</title></rect>
+<rect x="470.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q56: correct</title></rect>
+<rect x="486.5" y="28.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q57: wrong</title></rect>
+<rect x="502.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4" fill-opacity="0.4"><title>Q58: partial</title></rect>
+<rect x="518.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q59: correct</title></rect>
+<rect x="534.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4" fill-opacity="0.4"><title>Q60: partial</title></rect>
+<rect x="550.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4" fill-opacity="0.4"><title>Q61: partial</title></rect>
+<rect x="566.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4" fill-opacity="0.4"><title>Q62: partial</title></rect>
+<rect x="582.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q63: correct</title></rect>
+<rect x="598.5" y="28.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q64: wrong</title></rect>
+<rect x="614.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4" fill-opacity="0.4"><title>Q65: partial</title></rect>
+<rect x="630.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q66: correct</title></rect>
+<rect x="646.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q67: correct</title></rect>
+<rect x="662.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4" fill-opacity="0.4"><title>Q68: partial</title></rect>
+<rect x="678.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q69: correct</title></rect>
+<rect x="694.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q70: correct</title></rect>
+<rect x="710.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4"><title>Q71: correct</title></rect>
+<rect x="726.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4" fill-opacity="0.4"><title>Q72: partial</title></rect>
+<rect x="742.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4" fill-opacity="0.4"><title>Q73: partial</title></rect>
+<rect x="758.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4" fill-opacity="0.4"><title>Q74: partial</title></rect>
+<rect x="774.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4" fill-opacity="0.4"><title>Q75: partial</title></rect>
+<rect x="790.5" y="28.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q76: wrong</title></rect>
+<rect x="806.5" y="28.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q77: wrong</title></rect>
+<rect x="822.5" y="28.5" width="13" height="13" rx="2" fill="#2F81C4" fill-opacity="0.4"><title>Q78: partial</title></rect>
+<rect x="838.5" y="28.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q79: wrong</title></rect>
+<circle cx="6" cy="82" r="5" fill="#C8742F"/><text x="18" y="86" fill="#8B949E" font-weight="600">Claude Opus 5.5</text>
+<text x="18" y="104" fill="#8B949E" font-size="12">12 correct · 29 partial · 38 wrong</text>
+<rect x="230.5" y="74.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q1: partial</title></rect>
+<rect x="246.5" y="74.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q2: partial</title></rect>
+<rect x="262.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q3: wrong</title></rect>
+<rect x="278.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q4: wrong</title></rect>
+<rect x="294.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q5: wrong</title></rect>
+<rect x="310.5" y="74.5" width="13" height="13" rx="2" fill="#C8742F"><title>Q6: correct</title></rect>
+<rect x="326.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q7: wrong</title></rect>
+<rect x="342.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q8: wrong</title></rect>
+<rect x="358.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q9: wrong</title></rect>
+<rect x="374.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q10: wrong</title></rect>
+<rect x="390.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q11: wrong</title></rect>
+<rect x="406.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q12: wrong</title></rect>
+<rect x="422.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q13: wrong</title></rect>
+<rect x="438.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q14: wrong</title></rect>
+<rect x="454.5" y="74.5" width="13" height="13" rx="2" fill="#C8742F"><title>Q15: correct</title></rect>
+<rect x="470.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q16: wrong</title></rect>
+<rect x="486.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q17: wrong</title></rect>
+<rect x="502.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q18: wrong</title></rect>
+<rect x="518.5" y="74.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q19: partial</title></rect>
+<rect x="534.5" y="74.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q20: partial</title></rect>
+<rect x="550.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q21: wrong</title></rect>
+<rect x="566.5" y="74.5" width="13" height="13" rx="2" fill="#C8742F"><title>Q22: correct</title></rect>
+<rect x="582.5" y="74.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q23: partial</title></rect>
+<rect x="598.5" y="74.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q24: partial</title></rect>
+<rect x="614.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q25: wrong</title></rect>
+<rect x="630.5" y="74.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q26: partial</title></rect>
+<rect x="646.5" y="74.5" width="13" height="13" rx="2" fill="#C8742F"><title>Q27: correct</title></rect>
+<rect x="662.5" y="74.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q28: partial</title></rect>
+<rect x="678.5" y="74.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q29: partial</title></rect>
+<rect x="694.5" y="74.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q30: partial</title></rect>
+<rect x="710.5" y="74.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q31: partial</title></rect>
+<rect x="726.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q32: wrong</title></rect>
+<rect x="742.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q33: wrong</title></rect>
+<rect x="758.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q34: wrong</title></rect>
+<rect x="774.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q35: wrong</title></rect>
+<rect x="790.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q36: wrong</title></rect>
+<rect x="806.5" y="74.5" width="13" height="13" rx="2" fill="#C8742F"><title>Q37: correct</title></rect>
+<rect x="822.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q38: wrong</title></rect>
+<rect x="838.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q39: wrong</title></rect>
+<rect x="854.5" y="74.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q40: wrong</title></rect>
+<rect x="230.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q41: partial</title></rect>
+<rect x="246.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F"><title>Q42: correct</title></rect>
+<rect x="262.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q43: partial</title></rect>
+<rect x="278.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F"><title>Q44: correct</title></rect>
+<rect x="294.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F"><title>Q45: correct</title></rect>
+<rect x="310.5" y="90.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q46: wrong</title></rect>
+<rect x="326.5" y="90.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q47: wrong</title></rect>
+<rect x="342.5" y="90.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q48: wrong</title></rect>
+<rect x="358.5" y="90.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q49: wrong</title></rect>
+<rect x="374.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q50: partial</title></rect>
+<rect x="390.5" y="90.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q51: wrong</title></rect>
+<rect x="406.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q52: partial</title></rect>
+<rect x="422.5" y="90.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q53: wrong</title></rect>
+<rect x="438.5" y="90.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q54: wrong</title></rect>
+<rect x="454.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q55: partial</title></rect>
+<rect x="470.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F"><title>Q56: correct</title></rect>
+<rect x="486.5" y="90.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q57: wrong</title></rect>
+<rect x="502.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q58: partial</title></rect>
+<rect x="518.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q59: partial</title></rect>
+<rect x="534.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q60: partial</title></rect>
+<rect x="550.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q61: partial</title></rect>
+<rect x="566.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q62: partial</title></rect>
+<rect x="582.5" y="90.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q63: wrong</title></rect>
+<rect x="598.5" y="90.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q64: wrong</title></rect>
+<rect x="614.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q65: partial</title></rect>
+<rect x="630.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F"><title>Q66: correct</title></rect>
+<rect x="646.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F"><title>Q67: correct</title></rect>
+<rect x="662.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q68: partial</title></rect>
+<rect x="678.5" y="90.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q69: wrong</title></rect>
+<rect x="694.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q70: partial</title></rect>
+<rect x="710.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F"><title>Q71: correct</title></rect>
+<rect x="726.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q72: partial</title></rect>
+<rect x="742.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q73: partial</title></rect>
+<rect x="758.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q74: partial</title></rect>
+<rect x="774.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q75: partial</title></rect>
+<rect x="790.5" y="90.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q76: wrong</title></rect>
+<rect x="806.5" y="90.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q77: wrong</title></rect>
+<rect x="822.5" y="90.5" width="13" height="13" rx="2" fill="#C8742F" fill-opacity="0.4"><title>Q78: partial</title></rect>
+<rect x="838.5" y="90.5" width="13" height="13" rx="2" fill="none" stroke="#8B949E" stroke-opacity="0.7"><title>Q79: wrong</title></rect>
+<rect x="230" y="137" width="12" height="12" rx="2" fill="#8B949E"/><text x="248" y="148" fill="#8B949E" font-size="12">correct</text>
+<rect x="320" y="137" width="12" height="12" rx="2" fill="#8B949E" fill-opacity="0.4"/><text x="338" y="148" fill="#8B949E" font-size="12">partial</text>
+<rect x="405.5" y="137.5" width="11" height="11" rx="2" fill="none" stroke="#8B949E"/><text x="423" y="148" fill="#8B949E" font-size="12">wrong or no answer</text>
+</svg>

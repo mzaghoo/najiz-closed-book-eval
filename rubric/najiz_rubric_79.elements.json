@@ -1,0 +1,1957 @@
+{
+ "name": "Najiz QA rubric (neutral, 79 questions)",
+ "source": {
+  "file": "Thiqah/ArabLegalEval benchmarkQA/Najiz_QA_with_context_v2.benchmark.json",
+  "sha256": "72bdc6bf5d75ba9d00fd406c9545ea822ccb43169410c3e111a7f16b5072e6b6"
+ },
+ "element_types": {
+  "P": {
+   "name": "core principle",
+   "weight": 3
+  },
+  "T": {
+   "name": "deadline, period or term",
+   "weight": 2
+  },
+  "M": {
+   "name": "amount, rate or payment",
+   "weight": 2
+  },
+  "X": {
+   "name": "condition, exception or detail",
+   "weight": 1
+  },
+  "L": {
+   "name": "one item of an enumerated list",
+   "weight": 1
+  }
+ },
+ "rules": {
+  "gate": "Any statement that contradicts the reference answer = wrong (score 0), except a wrong amount or timeline, which takes the penalty below instead.",
+  "wrong_reference_penalty": -2,
+  "wrong_reference_definition": "The answer cites an article or law that differs from the one the reference cites for the same point. Citing nothing is not penalised.",
+  "score": "max(0, (sum of weights of elements met + wrong-reference penalties) / total weight), then x 0.3 if the wrong-amount-or-timeline penalty applies",
+  "labels_proposed": {
+   "correct": "score >= 0.85 and every P, T and M element met",
+   "partial": "score >= 0.40 and no gate failure",
+   "wrong": "gate failure, or score < 0.40"
+  },
+  "source_of_elements": "Every element is taken from the benchmark's ground_truths text only. No element comes from outside knowledge.",
+  "wrong_amount_or_timeline_penalty": "If the answer states an amount, rate, deadline, period or term that contradicts the reference, multiply the score by 0.3 (a 70% penalty). Applied once per answer. If the answer also contains another contradiction, the gate applies and the score is 0."
+ },
+ "grader_instructions": [
+  "Grade each answer against its question's elements only; do not use outside knowledge to add or remove elements.",
+  "Apply the gate first: if the answer contradicts the reference on anything other than an amount or timeline, label it wrong (score 0).",
+  "If the answer states a wrong amount, rate, deadline, period or term, the element it concerns is not met, and the final score is multiplied by 0.3.",
+  "An element is met only if the answer states it, in any wording; an element implied only by the question does not count.",
+  "Apply −2 for each citation that differs from reference_cited for the same point; citing nothing is not penalised.",
+  "Do not see which model wrote the answer.",
+  "Return for each question: met element indices (0-based), any gate failure with the contradicting sentence, any wrong citation, the score and the label."
+ ],
+ "questions": {
+  "1": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "ترفع على المتهم إذا كان أهلاً"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "ترفع على الولي أو الوصي إذا كان المتهم ناقص الأهلية"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "إن لم يكن له ولي أو وصي وجب على المحكمة أن تقيم عليه ولياً"
+    }
+   ],
+   "total_weight": 5,
+   "reference_cited": null,
+   "note": null
+  },
+  "2": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "وقف الدعوى بناء على اتفاق الخصوم"
+    },
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "مدة لا تزيد على ستة أشهر"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "من تاريخ إقرار المحكمة اتفاقهم"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "للمحكمة وقف الدعوى إذا علقت حكمها على الفصل في مسألة أخرى"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "بزوال سبب الوقف للخصوم طلب السير في الدعوى"
+    }
+   ],
+   "total_weight": 8,
+   "reference_cited": null,
+   "note": null
+  },
+  "3": {
+   "elements": [
+    {
+     "type": "M",
+     "weight": 2,
+     "text": "2000 ريال لإصدار الترخيص"
+    }
+   ],
+   "total_weight": 2,
+   "reference_cited": "م48/2 نظام المحاماة",
+   "note": null
+  },
+  "4": {
+   "elements": [
+    {
+     "type": "M",
+     "weight": 2,
+     "text": "1000 ريال لتجديد الترخيص"
+    }
+   ],
+   "total_weight": 2,
+   "reference_cited": "م48/2 نظام المحاماة",
+   "note": null
+  },
+  "5": {
+   "elements": [
+    {
+     "type": "M",
+     "weight": 2,
+     "text": "خمسمائة ريال"
+    }
+   ],
+   "total_weight": 2,
+   "reference_cited": null,
+   "note": null
+  },
+  "6": {
+   "elements": [
+    {
+     "type": "M",
+     "weight": 2,
+     "text": "خمسون ريالاً"
+    }
+   ],
+   "total_weight": 2,
+   "reference_cited": null,
+   "note": null
+  },
+  "7": {
+   "elements": [
+    {
+     "type": "M",
+     "weight": 2,
+     "text": "مائة ريال"
+    }
+   ],
+   "total_weight": 2,
+   "reference_cited": null,
+   "note": null
+  },
+  "8": {
+   "elements": [
+    {
+     "type": "M",
+     "weight": 2,
+     "text": "ثلاثة آلاف ريال"
+    }
+   ],
+   "total_weight": 2,
+   "reference_cited": null,
+   "note": null
+  },
+  "9": {
+   "elements": [
+    {
+     "type": "M",
+     "weight": 2,
+     "text": "خمسة آلاف ريال"
+    }
+   ],
+   "total_weight": 2,
+   "reference_cited": null,
+   "note": null
+  },
+  "10": {
+   "elements": [
+    {
+     "type": "M",
+     "weight": 2,
+     "text": "ألفا ريال"
+    }
+   ],
+   "total_weight": 2,
+   "reference_cited": null,
+   "note": null
+  },
+  "11": {
+   "elements": [
+    {
+     "type": "M",
+     "weight": 2,
+     "text": "عشرة آلاف ريال"
+    }
+   ],
+   "total_weight": 2,
+   "reference_cited": null,
+   "note": null
+  },
+  "12": {
+   "elements": [
+    {
+     "type": "M",
+     "weight": 2,
+     "text": "ثلاثة آلاف ريال"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "أياً كانت المحكمة أو الدائرة التي تنظرها"
+    }
+   ],
+   "total_weight": 3,
+   "reference_cited": null,
+   "note": null
+  },
+  "13": {
+   "elements": [
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "مدة لا تتجاوز عشرة أيام من تاريخ إبلاغ الجهات"
+    },
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "الإفصاح عن أصول المدين بناءً على أمر قاضي التنفيذ"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "يشمل الجهات المختصة أو المشرفة على تسجيل الأموال ومدين المدين ومحاسبه وموظفيه"
+    }
+   ],
+   "total_weight": 6,
+   "reference_cited": null,
+   "note": null
+  },
+  "14": {
+   "elements": [
+    {
+     "type": "M",
+     "weight": 2,
+     "text": "2% من قيمة المطالبة"
+    },
+    {
+     "type": "M",
+     "weight": 2,
+     "text": "لا تقل عن خمسمائة ريال"
+    },
+    {
+     "type": "M",
+     "weight": 2,
+     "text": "لا تزيد على عشرة آلاف ريال"
+    }
+   ],
+   "total_weight": 6,
+   "reference_cited": null,
+   "note": null
+  },
+  "15": {
+   "elements": [
+    {
+     "type": "M",
+     "weight": 2,
+     "text": "5%"
+    }
+   ],
+   "total_weight": 2,
+   "reference_cited": null,
+   "note": null
+  },
+  "16": {
+   "elements": [
+    {
+     "type": "M",
+     "weight": 2,
+     "text": "2%"
+    }
+   ],
+   "total_weight": 2,
+   "reference_cited": null,
+   "note": null
+  },
+  "17": {
+   "elements": [
+    {
+     "type": "M",
+     "weight": 2,
+     "text": "3%"
+    }
+   ],
+   "total_weight": 2,
+   "reference_cited": null,
+   "note": null
+  },
+  "18": {
+   "elements": [
+    {
+     "type": "M",
+     "weight": 2,
+     "text": "4%"
+    }
+   ],
+   "total_weight": 2,
+   "reference_cited": null,
+   "note": null
+  },
+  "19": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "تنفذ بالطرق المقررة في نظام التنفيذ"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "إذا تضمن التنفيذ دفع أموال بشكل دوري يجري وفق ترتيبات تحددها اللائحة"
+    }
+   ],
+   "total_weight": 4,
+   "reference_cited": null,
+   "note": null
+  },
+  "20": {
+   "elements": [
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "صدور حكم نهائي"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "عفو ولي الأمر فيما يدخله العفو"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "التوبة بضوابطها الشرعية المسقطة للعقوبة"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "وفاة المتهم"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "لا يمنع ذلك من الاستمرار في دعوى الحق الخاص"
+    }
+   ],
+   "total_weight": 5,
+   "reference_cited": "م22 الإجراءات الجزائية",
+   "note": null
+  },
+  "21": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "يتحمل أطراف الدعوى التكاليف بالتساوي"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "ما لم يتفق على غير ذلك"
+    }
+   ],
+   "total_weight": 4,
+   "reference_cited": null,
+   "note": null
+  },
+  "22": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "يمنع توثيق عقد زواج من هو دون 18 عاماً"
+    },
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "للمحكمة أن تأذن بزواجه"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "ذكراً كان أو أنثى إذا كان بالغاً"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "بعد التحقق من مصلحته"
+    }
+   ],
+   "total_weight": 8,
+   "reference_cited": null,
+   "note": null
+  },
+  "23": {
+   "elements": [
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "دائرة المحكمة التي أصدرت السند التنفيذي"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "مكان الجهة التي أنشئ المحرر في منطقتها"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "موطن المدين"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "موطن عقار المدين"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "مكان أمواله المنقولة"
+    }
+   ],
+   "total_weight": 5,
+   "reference_cited": null,
+   "note": null
+  },
+  "24": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "وثيقة رسمية صادرة من محكمة في دعوى مالية"
+    },
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "نص الحكم على إلزام بدفع مبلغ مالي"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "على دفعة واحدة أو عدة دفعات"
+    }
+   ],
+   "total_weight": 7,
+   "reference_cited": null,
+   "note": null
+  },
+  "25": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "صادرة من محكم أو جهة تحكيم"
+    },
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "نص على إلزام بدفع مبلغ مالي"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "على دفعة واحدة أو عدة دفعات"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "مصدقة من محكمة الاستئناف"
+    }
+   ],
+   "total_weight": 8,
+   "reference_cited": null,
+   "note": null
+  },
+  "26": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "يتوقف الصندوق عن صرف النفقة"
+    },
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "يطالب المستفيد برد كامل المبالغ المصروفة"
+    },
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "خلال شهرين من تاريخ الحكم برد الدعوى"
+    }
+   ],
+   "total_weight": 8,
+   "reference_cited": null,
+   "note": null
+  },
+  "27": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "تحسب التكاليف بناء على تقدير القيمة الجديد"
+    }
+   ],
+   "total_weight": 3,
+   "reference_cited": null,
+   "note": null
+  },
+  "28": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "الموظف العام ومن في حكمه إذا منع التنفيذ أو أعاقه"
+    },
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "السجن مدة لا تزيد على سبع سنوات"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "يعد ذلك من الجرائم المخلة بالأمانة"
+    }
+   ],
+   "total_weight": 6,
+   "reference_cited": null,
+   "note": null
+  },
+  "29": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "لكل من الخصمين تقديم الطلبات العارضة"
+    },
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "قبل قفل باب المرافعة"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "يعود الحق متى أعيد فتح باب المرافعة"
+    }
+   ],
+   "total_weight": 6,
+   "reference_cited": "م82/1 اللائحة التنفيذية للمرافعات",
+   "note": null
+  },
+  "30": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "لا يجري الولي أو الوصي التصرفات المحددة إلا بعد استئذان المحكمة المختصة"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "إذا كان الولي غير الأب"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "شراء عقار للقاصر أو الغائب"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "بيع عقاره"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "قسمته"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "رهنه"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "دمجه"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الاقتراض له"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "طلب صرف ماله المودع لدى البنك المركزي أو المصارف"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "إذا كان المولى عليه طرفاً في شركات يطلب توثيق عقودها أو زيادة رأس مالها"
+    }
+   ],
+   "total_weight": 12,
+   "reference_cited": "م224 المرافعات",
+   "note": null
+  },
+  "31": {
+   "elements": [
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الامتناع عن تنفيذ الحكم النهائي أو إخفاء الأموال أو تهريبها أو الامتناع عن الإفصاح"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "تعمد تعطيل التنفيذ بإقامة دعوى قصد منها التعطيل"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "مقاومة التنفيذ بالتهديد أو التعدي على القائم بالتنفيذ أو المنفذ له"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الكذب في الإقرارات أو الإجراءات أو تقديم بيانات غير صحيحة"
+    }
+   ],
+   "total_weight": 4,
+   "reference_cited": null,
+   "note": null
+  },
+  "32": {
+   "elements": [
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "السجن مدة لا تزيد على ثلاثة أشهر"
+    },
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "الامتناع عن تنفيذ حكم صادر بالحضانة أو الولاية أو الزيارة"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "من الوالدين أو غيرهما"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "أو مقاومة التنفيذ أو تعطيله"
+    }
+   ],
+   "total_weight": 7,
+   "reference_cited": null,
+   "note": null
+  },
+  "33": {
+   "elements": [
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "إذا حكم بعدم الاختصاص فلا تستحق تكاليف جديدة أمام المحكمة المختصة ما لم يتغير موضوع الدعوى"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "إذا نقضت المحكمة المختصة الحكم وأعادت الدعوى إلى المحكمة مصدرة الحكم أو إلى محكمة أخرى"
+    }
+   ],
+   "total_weight": 2,
+   "reference_cited": null,
+   "note": "The reference covers only two situations; it may not be a complete list."
+  },
+  "34": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "الخبرة تكون بمزاولة أحد الأعمال المحددة، وتخضع لتقدير لجنة القيد والقبول"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "القضاء داخل المملكة وخارجها"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الإفتاء الرسمي داخل المملكة"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "تدريس الفقه أو أصوله أو الأنظمة في الجامعات أو المعاهد"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الاستشارات في أجهزة الدولة ومؤسساتها"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الخبرة في الشركات والمؤسسات الأهلية"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الترافع عن الغير أمام الجهات"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الادعاء العام أو التحقيق"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "أعمال كتابات العدل"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الكتابة في ضبوط القضايا بوظيفة لا تقل عن رئيس كتاب ضبط"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "يعتد بالترخيص السابق إذا استوفيت مدة الخبرة"
+    }
+   ],
+   "total_weight": 13,
+   "reference_cited": "م5/3 اللائحة التنفيذية للمحاماة",
+   "note": null
+  },
+  "35": {
+   "elements": [
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الدعاوى التجارية"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الدعاوى العمالية (الشركات)"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الدعاوى الجزائية (الحق الخاص)"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الدعاوى الحقوقية"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "طلبات التنفيذ والمنازعات التنفيذية"
+    }
+   ],
+   "total_weight": 5,
+   "reference_cited": null,
+   "note": null
+  },
+  "36": {
+   "elements": [
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الدعاوى الجزائية العامة والتأديبية والطلبات المتعلقة بها"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "قضايا الأحوال الشخصية وطلباتها عدا النقض والتماس إعادة النظر"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الدعاوى والطلبات التي يختص بها ديوان المظالم"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الدعاوى والطلبات الناشئة عن نظام الإفلاس"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "دعاوى قسمة التركات عدا النقض والتماس إعادة النظر"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الإنهاءات وما يتعلق بها من طلبات"
+    }
+   ],
+   "total_weight": 6,
+   "reference_cited": null,
+   "note": null
+  },
+  "37": {
+   "elements": [
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "لا تنفيذ جبري إلا بسند تنفيذي لحق محدد المقدار حال الأداء"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الأحكام والقرارات والأوامر الصادرة من المحاكم"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "أحكام المحكمين المذيلة بأمر التنفيذ"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "محاضر الصلح من الجهات المخولة أو المصدقة من المحاكم"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الأوراق التجارية"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "العقود والمحررات الموثقة"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الأحكام والأوامر وأحكام المحكمين والمحررات الموثقة الصادرة في بلد أجنبي"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الأوراق العادية المقر باستحقاق محتواها كلياً أو جزئياً"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "العقود والأوراق التي لها قوة السند التنفيذي بموجب نظام"
+    }
+   ],
+   "total_weight": 9,
+   "reference_cited": "م9 نظام التنفيذ",
+   "note": null
+  },
+  "38": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "استمرار توافر شروط الترخيص"
+    },
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "اجتياز الاختبارات والدورات التي تحددها الإدارة"
+    },
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "طلب التجديد قبل الانتهاء بما لا يقل عن 90 يوماً ولا يزيد على 180 يوماً"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "وفق النماذج والإجراءات المعتمدة"
+    }
+   ],
+   "total_weight": 9,
+   "reference_cited": null,
+   "note": null
+  },
+  "39": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "التدريب لدى محامٍ"
+    },
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "أمضى مدة لا تقل عن خمس سنوات في مزاولة المهنة"
+    }
+   ],
+   "total_weight": 5,
+   "reference_cited": "م3/10/ب اللائحة التنفيذية للمحاماة",
+   "note": null
+  },
+  "40": {
+   "elements": [
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "طلبات الاستئناف (عدا المستثنى)"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "طلبات النقض والتماس إعادة النظر"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الطلبات العارضة"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "طلبات الإدخال من الخصوم"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "طلبات الرد"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "طلب السير في الدعوى الموقوفة اتفاقاً قبل انتهاء المدة"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "طلب تصحيح الحكم أو تفسيره"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "طلب وقف تنفيذ الحكم"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "طلب نسخة بديلة للوثائق القضائية"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "طلب نسخة مصدقة من أوراق الدعوى"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "طلب الاطلاع على أوراق الدعوى"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الطلبات الأخرى التي تحددها اللائحة"
+    }
+   ],
+   "total_weight": 12,
+   "reference_cited": null,
+   "note": null
+  },
+  "41": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "بالريال السعودي"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "لا يدخل الجزء من الريال في الحسبة"
+    }
+   ],
+   "total_weight": 4,
+   "reference_cited": null,
+   "note": null
+  },
+  "42": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "محكمة مكان إقامة الأكثرية"
+    },
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "عند التساوي المدعي بالخيار بين محاكم أماكن إقامتهم"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "مع مراعاة ما استثناه النظام"
+    }
+   ],
+   "total_weight": 7,
+   "reference_cited": null,
+   "note": null
+  },
+  "43": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "يجب على الزوج توثيق الطلاق أمام الجهة المختصة"
+    },
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "خلال 15 يوماً من حين البينونة"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "لا يخل ذلك بحق الزوجة في دعوى إثبات الطلاق"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "إن لم يوثق ولم تعلم فلها تعويض لا يقل عن الحد الأدنى للنفقة من وقوع الطلاق إلى علمها"
+    }
+   ],
+   "total_weight": 7,
+   "reference_cited": "م90 و91 الأحوال الشخصية",
+   "note": null
+  },
+  "44": {
+   "elements": [
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "30 يوماً للاعتراض بالاستئناف"
+    },
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "10 أيام في الدعاوى المستعجلة"
+    }
+   ],
+   "total_weight": 4,
+   "reference_cited": null,
+   "note": null
+  },
+  "45": {
+   "elements": [
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "مخالفة أحكام الشريعة أو الأنظمة"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "صدوره من محكمة غير مشكلة تشكيلاً سليماً"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "صدوره من محكمة أو دائرة غير مختصة"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الخطأ في تكييف الواقعة أو وصفها"
+    }
+   ],
+   "total_weight": 4,
+   "reference_cited": null,
+   "note": null
+  },
+  "46": {
+   "elements": [
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "سجل تجاري ساري في النشاط أو ترخيص ساري يخوله تقديم الخدمة"
+    },
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "خبرة لا تقل عن سنتين في مجال الترخيص أو أعمال نظيرة"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "ألا يكون محكوماً بافتتاح إجراء تصفية وفق نظام الإفلاس"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "خلو السجل الائتماني من معلومات سلبية مؤثرة"
+    },
+    {
+     "type": "M",
+     "weight": 2,
+     "text": "ضمان بنكي غير مشروط بمائة ألف ريال، أو وثيقة تأمين تغني عنه"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "لخدمة تسليم الأصول المنقولة: أن يكون شركة نظامية"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "للشخص الطبيعي: كامل الأهلية وغير محكوم بجريمة مخلة بالشرف أو الأمانة ما لم يرد اعتباره"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "مؤهل وفق ما تحدده الوكالة؛ والحارس القضائي بترخيص محاسبة أو محاماة"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "اجتياز البرامج التدريبية والاختبارات"
+    }
+   ],
+   "total_weight": 11,
+   "reference_cited": null,
+   "note": null
+  },
+  "47": {
+   "elements": [
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "سعودي الجنسية، ويجوز لغير السعودي وفق الاتفاقيات"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "بكالوريوس شريعة أو أنظمة أو ما يعادله، أو دبلوم معهد الإدارة في القانون"
+    },
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "خبرة لا تقل عن سنتين"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "يعفى حامل الدكتوراه، وسنة للماجستير، وستة أشهر لدبلوم الثلاث سنوات"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "حسن السيرة وغير محجور عليه"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "ألا يكون حكم عليه بحد أو بجريمة مخلة بالشرف أو الأمانة ما لم يمض خمس سنوات"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "أن يكون مقيماً في المملكة"
+    }
+   ],
+   "total_weight": 8,
+   "reference_cited": "م3 نظام المحاماة",
+   "note": null
+  },
+  "48": {
+   "elements": [
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "محاكمة المتزوج تأديبياً لدى ديوان المظالم"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "عدم توثيق الزواج من الجهات المختصة"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "عدم السماح بدخول الزوج الأجنبي وإنهاء إقامته"
+    }
+   ],
+   "total_weight": 3,
+   "reference_cited": null,
+   "note": "The reference lists consequences of an unregistered marriage, not a numeric penalty."
+  },
+  "49": {
+   "elements": [
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "سمعة دولية متميزة في المحاماة"
+    },
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "مضى على تأسيسه عشر سنوات على الأقل"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "تمثيل أو شراكات في ثلاث دول أو خمسة أقاليم"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "يسمي شريكين على الأقل يمثلانه في المملكة"
+    },
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "إقامتهما في المملكة 180 يوماً في السنة على الأقل"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "لم يصدر ضده حكم نهائي في جريمة مخلة أو مخالفة مهنية جسيمة ما لم يمض خمس سنوات"
+    }
+   ],
+   "total_weight": 8,
+   "reference_cited": null,
+   "note": null
+  },
+  "50": {
+   "elements": [
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "سعودي الجنسية"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "حسن السيرة وغير محكوم بجريمة مخلة أو مفصول تأديبياً"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "لائق صحياً"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "شهادة جامعية في الشريعة أو الأنظمة بتقدير لا يقل عن جيد"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "اجتياز امتحان تحريري"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "اجتياز دورة تدريبية في التوثيق ما لم يكن عمل سنة في الأعمال المحددة"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "ألا يكون موظفاً ولا مزاولاً لمهنة أخرى عدا المحاماة"
+    }
+   ],
+   "total_weight": 7,
+   "reference_cited": null,
+   "note": null
+  },
+  "51": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "ترد متى تبين عدم وجوبها على دافعها أو استفاد من حالة إعفاء"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الحكم لمصلحة دافع التكاليف"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "قبول طلب رد القاضي"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "إجابة طلب تصحيح الحكم أو تفسيره"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "نقض الحكم المستأنف كلياً أو جزئياً بقدره"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "طلب النقض إذا قضي بإعادة القضية"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "ترك المدعي دعواه قبل الجلسة الأولى"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الصلح قبل رفع الجلسة الأولى"
+    }
+   ],
+   "total_weight": 10,
+   "reference_cited": null,
+   "note": null
+  },
+  "52": {
+   "elements": [
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "صدور حكم نهائي"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "عفو المجني عليه أو وارثه"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "لا يمنع العفو من الاستمرار في دعوى الحق العام"
+    }
+   ],
+   "total_weight": 3,
+   "reference_cited": "م23 الإجراءات الجزائية",
+   "note": null
+  },
+  "53": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "يعلن محضر الحجز في موقع نشر بيانات التنفيذ"
+    },
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "خلال خمسة أيام من تاريخ الحجز"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "يعد الإعلان إبلاغاً لكل من له علاقة بالمال المحجوز"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "يبلغ مأمور التنفيذ المحجوز عليه ومن له حق عيني معروف العنوان"
+    }
+   ],
+   "total_weight": 7,
+   "reference_cited": null,
+   "note": null
+  },
+  "54": {
+   "elements": [
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "خلال خمسة أيام عمل من تاريخ قبول طلب المستفيد"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "بعد انتهاء التدقيق والدراسة"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "يشعر المستفيد بقبول طلبه"
+    }
+   ],
+   "total_weight": 4,
+   "reference_cited": null,
+   "note": null
+  },
+  "55": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "يصدر التقدير النهائي بعد انتهاء الدعوى"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "لا يحصل المبلغ إلا بعد انتهاء مدة الاعتراض على التقدير أو صدور قرار فيه"
+    }
+   ],
+   "total_weight": 4,
+   "reference_cited": null,
+   "note": null
+  },
+  "56": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "للمحكمة من تلقاء نفسها أو بطلب أحد الخصوم"
+    },
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "لإبداء الرأي في المسائل الفنية التي يستلزمها الفصل في الدعوى"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "خبير أو أكثر"
+    }
+   ],
+   "total_weight": 7,
+   "reference_cited": "م110 نظام الإثبات",
+   "note": null
+  },
+  "57": {
+   "elements": [
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "الحاضن من الوالدين: لا يسافر بالمحضون أكثر من 90 يوماً في السنة إلا بموافقة الوالد الآخر"
+    },
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "الحاضن من غير الوالدين: لا يزيد على 30 يوماً في السنة إلا بموافقة الوالدين أو أحدهما"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "والولي على النفس في حال الوفاة"
+    }
+   ],
+   "total_weight": 5,
+   "reference_cited": null,
+   "note": null
+  },
+  "58": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "قاضي التنفيذ يفصل في منازعات التنفيذ مهما كانت قيمتها"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "وفقاً لأحكام القضاء المستعجل"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "يختص بالقرارات والأوامر المتعلقة بالتنفيذ (الشرطة، المنع من السفر، الحبس، الإفصاح، الإعسار)"
+    }
+   ],
+   "total_weight": 5,
+   "reference_cited": null,
+   "note": null
+  },
+  "59": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "على الدائنين الحاجزين"
+    },
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "ومن يعد طرفاً في الإجراءات"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "بأمر من قاضي التنفيذ"
+    }
+   ],
+   "total_weight": 7,
+   "reference_cited": null,
+   "note": null
+  },
+  "60": {
+   "elements": [
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "المسجونون والموقوفون في قضايا مالية غير جنائية"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "العمال المشمولون بنظام العمل والمستثنون منه ومن يستحق عنهم"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الوزارات والأجهزة الحكومية"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "تتحمل الدولة التكاليف عن مستفيدي الضمان الاجتماعي"
+    }
+   ],
+   "total_weight": 4,
+   "reference_cited": null,
+   "note": null
+  },
+  "61": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "يتحملها المنفذ ضده"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "إن ثبت عدم استحقاق طالب التنفيذ تحمل كامل التكاليف"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "إن لم يستحق جزءاً تحمل بقدره"
+    }
+   ],
+   "total_weight": 5,
+   "reference_cited": null,
+   "note": null
+  },
+  "62": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "يتحمل المحكوم عليه التكاليف"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "ما لم ينص النظام أو اللائحة على غير ذلك"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "دون إخلال بحق التعويض"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "إن كان المدعي غير محق في جزء تحمل قسطه"
+    }
+   ],
+   "total_weight": 6,
+   "reference_cited": null,
+   "note": null
+  },
+  "63": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "تحكم المحكمة المختصة بنظر الموضوع بصفة مؤقتة في المسائل المستعجلة"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "لا يؤثر الحكم على موضوع الدعوى"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "سواء رفع الطلب مباشرة أو تبعاً للدعوى الأصلية"
+    }
+   ],
+   "total_weight": 5,
+   "reference_cited": "م205 المرافعات",
+   "note": null
+  },
+  "64": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "نعم توجد مدة محددة"
+    },
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "عشر سنوات إذا نقل بناءً على طلبه"
+    },
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "خمس سنوات إذا نقلته اللجنة"
+    }
+   ],
+   "total_weight": 7,
+   "reference_cited": null,
+   "note": null
+  },
+  "65": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "لا يؤثر عدم الدفع على قيد الطلب والبت في محاكم الدرجة الأولى"
+    },
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "النقض والتماس إعادة النظر: مهلة 30 يوماً للسداد وإلا سقط الحق وعد الحكم نهائياً"
+    }
+   ],
+   "total_weight": 5,
+   "reference_cited": null,
+   "note": null
+  },
+  "66": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "لا تأثير لترك المدعي بالحق الخاص على الدعوى العامة"
+    }
+   ],
+   "total_weight": 3,
+   "reference_cited": null,
+   "note": null
+  },
+  "67": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "لقاضي التنفيذ الأمر بالحبس والإفراج"
+    }
+   ],
+   "total_weight": 3,
+   "reference_cited": null,
+   "note": "The reference repeats Q58's text and never states yes or no; the element is the closest statement it contains."
+  },
+  "68": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "لا يجوز توقيع عقوبة إلا بعد ثبوت الإدانة"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "بعد محاكمة تجرى وفق المقتضى الشرعي"
+    }
+   ],
+   "total_weight": 4,
+   "reference_cited": "م3 الإجراءات الجزائية",
+   "note": "The reference does not mention suspicion (الشبهة); it states the general rule on proof of guilt."
+  },
+  "69": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "لا يجوز التنفيذ الجبري ما دام الاعتراض جائزاً"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "إلا إذا كانت مشمولة بالنفاذ المعجل أو نص عليه نظاماً"
+    }
+   ],
+   "total_weight": 4,
+   "reference_cited": null,
+   "note": null
+  },
+  "70": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "نعم يجوز"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "بعد قفله وقبل النطق بالحكم"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "للأسباب التي تقررها الدائرة"
+    }
+   ],
+   "total_weight": 5,
+   "reference_cited": null,
+   "note": null
+  },
+  "71": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "نعم"
+    }
+   ],
+   "total_weight": 3,
+   "reference_cited": null,
+   "note": "The reference is a bare 'yes' with no source or detail."
+  },
+  "72": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "نعم يحدد قاضي التنفيذ الطريقة ما لم ينص الحكم"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "التسليم في مكان مهيأ مناسب تحدده الوزارة"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "لا يكون في مراكز الشرطة ونحوها"
+    }
+   ],
+   "total_weight": 5,
+   "reference_cited": null,
+   "note": null
+  },
+  "73": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "الاختصاص بمكان وقوع الجريمة أو إقامة المتهم أو مكان القبض عليه"
+    },
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "لرئيس النيابة أو من ينيبه الاختيار بين مكان الإقامة ومكان الجريمة للمفرج عنه بحسب المصلحة"
+    }
+   ],
+   "total_weight": 6,
+   "reference_cited": "م130 الإجراءات الجزائية ولائحته",
+   "note": null
+  },
+  "74": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "يمكن وفق إجراءات"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "الأجنبية: موافقة الجهات المختصة ثم التقديم على خدمة التوثيق"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "الأجنبية من أم مواطنة: لا يتطلب موافقة مع شهادة الميلاد وهوية الأم"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "الخليجية: لا يلزم موافقة عدا البحرين"
+    }
+   ],
+   "total_weight": 6,
+   "reference_cited": null,
+   "note": null
+  },
+  "75": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "يجب اللجوء إلى المصالحة والوساطة قبل قيد دعاوى محددة"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الدعاوى في الفقرة 3 من المادة 16 من النظام"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الدعاوى في الفقرة 1 من المادة 11 من اللائحة"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الدعاوى بين زوجين أو أقارب حتى الدرجة الرابعة"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "العقود التي تتضمن اتفاقاً كتابياً على المصالحة قبل القضاء"
+    }
+   ],
+   "total_weight": 7,
+   "reference_cited": "م16/3 النظام، م11/1 اللائحة",
+   "note": null
+  },
+  "76": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "لا تلغى الوثائق إلا بحكم قضائي لمخالفتها الأصول أو تزويرها بعد مرافعة"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "للوثائق قوة الإثبات وتعد سنداً تنفيذياً"
+    }
+   ],
+   "total_weight": 4,
+   "reference_cited": "م41 نظام التوثيق",
+   "note": "The reference addresses cancelling documents generally, not revoking a waqf specifically."
+  },
+  "77": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "الاختصاص المكاني لتنفيذ الحضانة والزيارة في بلد الحضانة أو الزيارة المنصوص عليه في السند التنفيذي"
+    }
+   ],
+   "total_weight": 3,
+   "reference_cited": "م4/4 اللائحة التنفيذية للتنفيذ",
+   "note": null
+  },
+  "78": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "يجوز للمدعي طلب السير في الدعوى بعد شطبها"
+    },
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "خلال 60 يوماً وإلا عدت كأن لم تكن"
+    },
+    {
+     "type": "T",
+     "weight": 2,
+     "text": "في الدعاوى التجارية 30 يوماً"
+    },
+    {
+     "type": "X",
+     "weight": 1,
+     "text": "تشطب إذا غاب المدعي دون عذر مقبول"
+    }
+   ],
+   "total_weight": 8,
+   "reference_cited": "م55 المرافعات، م31 المحاكم التجارية",
+   "note": null
+  },
+  "79": {
+   "elements": [
+    {
+     "type": "P",
+     "weight": 3,
+     "text": "نعم بشرط استيفاء الشروط"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "شركة مرخص لها في المملكة"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "خبرة لا تقل عن ثلاث سنوات"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "ترخيص محدد بمدة"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "خبرات فنية وقدرات مالية"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "عدم تعارض المصالح ولو محتملاً"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الالتزام بالسرية حتى بعد انتهاء الترخيص"
+    },
+    {
+     "type": "L",
+     "weight": 1,
+     "text": "الالتزام بالشروط الفنية للوزارة"
+    }
+   ],
+   "total_weight": 10,
+   "reference_cited": null,
+   "note": null
+  }
+ },
+ "note_on_benchmark_text": "Question and reference-answer text are not redistributed. Run `python3 -m najiz_eval.fetch` to download the source benchmark and rebuild the full rubric (najiz_rubric_79.json, SHA-256 68e1aaf5...)."
+}
